@@ -1,1 +1,1 @@
-# Java-programming-language-lessons-for-beginners
+# java-beginner-lessons
