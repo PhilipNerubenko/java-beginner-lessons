@@ -11,12 +11,12 @@ class Student {
   public static void main(String[] args) {
     Student student = new Student(2);
     // byte, short, char, int, String types can be used for the switch expression
-    int a = 1;
-    int b = 3;
+    @SuppressWarnings("unused") int a = 1;
+    @SuppressWarnings("unused") int b = 3;
     final int c = 1;
     final int d = 3;
-    final int e;
-    final int f;
+    @SuppressWarnings("unused") final int e;
+    @SuppressWarnings("unused") final int f;
     e = 1;
     f = 3;
     switch (student.grade) {

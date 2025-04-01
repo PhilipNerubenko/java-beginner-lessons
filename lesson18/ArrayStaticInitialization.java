@@ -3,11 +3,11 @@ package lesson18;
 public class ArrayStaticInitialization {
     public static void main(String[] args) {
      // Declaration array
-    int[] array1;
+     @SuppressWarnings("unused") int[] array1;
     String[] array2;
     double[][] array3;
-    int[][] array10;
-    double[] array7;
+    @SuppressWarnings("unused") int[][] array10;
+    @SuppressWarnings("unused") double[] array7;
 
     // Allocation array
     array1 = new int[8];

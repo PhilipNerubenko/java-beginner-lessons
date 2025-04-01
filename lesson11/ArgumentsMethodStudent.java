@@ -28,7 +28,7 @@ public class ArgumentsMethodStudent {
   }
 
   public static void main(String[] args) {
-    ArgumentsMethodStudent st1 = new ArgumentsMethodStudent("Ivan", 3, 9.5);
+    @SuppressWarnings("unused") ArgumentsMethodStudent st1 = new ArgumentsMethodStudent("Ivan", 3, 9.5);
     ArgumentsMethodStudent st2 = new ArgumentsMethodStudent("Petr", 1, 5.3);
     // // st1*, st2* dublicate, not original
     // swap(st1, st2);

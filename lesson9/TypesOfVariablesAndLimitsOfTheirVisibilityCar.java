@@ -78,7 +78,7 @@ public class TypesOfVariablesAndLimitsOfTheirVisibilityCar {
   public void changeColor(String color) {
     System.out.println("Новый цвет автомобиля: " + color);
     // local variable available only within the method
-    int price = 5000;
+    @SuppressWarnings("unused") int price = 5000;
     // access modifier is only for instance variables
     // public int notAllowed = 500;
     // private int notAllowed = 500;
