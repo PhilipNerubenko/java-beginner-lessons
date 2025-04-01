@@ -1,4 +1,4 @@
-package lesson71;
+package lesson7_1;
 
 public class ThirdClass {
   public static void main(String[] args) {
