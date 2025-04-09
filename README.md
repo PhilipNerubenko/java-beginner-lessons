@@ -1651,3 +1651,638 @@ public class VariableArgumentsVarArgs {
 
 ![compileAndRunJavaApplication](./images/compileAndRunJavaApplication.png)
 *Рис 1.3 – Пример компиляции и запуска скомпилированной программы из родительской директории*
+
+Код доступен в файлах: [CommandLineArguments.java](./lesson19/CommandLineArguments.java), [VariableArgumentsVarArgs.java](./lesson19/VariableArgumentsVarArgs.java).
+
+## Урок 20: Всё о классе `ArrayList`
+
+В этом уроке мы изучим структуру данных, похожую на массив, но с возможностью динамического изменения длины. `ArrayList` является частью пакета `java.util` и широко используется в Java-программах.
+
+### Основные особенности
+
+- **Динамический размер**: В основе лежит массив, который автоматически увеличивает ёмкость при необходимости.
+- **Начальная ёмкость**: По умолчанию — 10 элементов. Можно задать вручную для оптимизации.
+- **Эффективность**: Изменение размера требует создания нового массива и копирования элементов, что может быть затратно. Рекомендуется задавать начальную ёмкость при известном размере данных.
+- **Гибкость**: Удобен для работы с динамическими коллекциями, но менее эффективен, чем массивы, при частых изменениях размера.
+
+### Создание `ArrayList`
+
+```java
+// Пустой список с ёмкостью по умолчанию (10)
+ArrayList<String> list1 = new ArrayList<>();
+
+// Пустой список с ёмкостью 55
+ArrayList<String> list2 = new ArrayList<>(55);
+
+// Копия существующего списка (поверхностное копирование)
+ArrayList<String> list3 = new ArrayList<>(list2);
+
+// Создание через интерфейс List
+List<String> list4 = new ArrayList<>();
+```
+
+### Методы `ArrayList`
+
+Добавление элементов в массив
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Python");
+        list.add("C++");
+        list.add(1, "JavaScript");
+        list.add("Java"); // Adding duplicate
+        //list.add(7, "Java"); // Adding at index 7 (out of bounds, will throw an exception)
+
+        for (String string : list) {
+            System.out.println(string);
+        }
+    }
+}
+```
+
+Получение элемента массива по индексу
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Python");
+        list.add("C++");
+        list.add(1, "JavaScript");
+        list.add("Java"); // Adding duplicate
+        //list.add(7, "Java"); // Adding at index 7 (out of bounds, will throw an exception)
+
+        for (String string : list) {
+            System.out.println(string);
+        }
+        System.out.println("list.get(3) = " + list.get(3)); // C++
+        // System.out.println("list.get(7) = " + list.get(7)); // This will throw an exception
+    }
+}
+```
+
+Замена элемента по индексу
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Python");
+        list.add("C++");
+        list.add(1, "JavaScript");
+        list.add("Java"); // Adding duplicate
+        //list.add(7, "Java"); // Adding at index 7 (out of bounds, will throw an exception)
+
+        for (String string : list) {
+            System.out.println(string);
+        }
+        System.out.println("list.get(3) = " + list.get(3)); // C++
+        // System.out.println("list.get(7) = " + list.get(7)); // This will throw an exception
+        list.set(1, "!!!");
+        for (String s: list) {
+            System.out.print(s + " "); // Java !!! Python C++ Java
+        }
+    }
+}
+```
+
+замена элементов без методов
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class ReplaceElementsArrayListWithoutMethods {
+    public static void main(String[] args) {
+        ArrayList<StringBuilder> list = new ArrayList<>();
+        StringBuilder sb1 = new StringBuilder("Hello");
+        StringBuilder sb2 = new StringBuilder("World");
+        StringBuilder sb3 = new StringBuilder("Java");
+    
+        list.add(sb1);
+        list.add(sb2);
+        list.add(sb3);
+        for (int i = 0; i < list.size(); i++) {
+            list.get(i).append("!");
+        }
+
+        for (StringBuilder sb : list) {
+            System.out.println(sb);
+        }
+    }
+}
+```
+
+Удаление элементов либо по индексу либо по элементу объекта
+
+Пример 1-й:
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class ReplaceElementsArrayListWithoutMethods {
+    public static void main(String[] args) {
+        ArrayList<StringBuilder> list = new ArrayList<>();
+        StringBuilder sb1 = new StringBuilder("Hello");
+        StringBuilder sb2 = new StringBuilder("World");
+        StringBuilder sb3 = new StringBuilder("Java");
+    
+        list.add(sb1);
+        list.add(sb2);
+        list.add(sb3);
+        for (int i = 0; i < list.size(); i++) {
+            list.get(i).append("!");
+        }
+
+        for (StringBuilder sb : list) {
+            System.out.println(sb);
+        }
+         list.remove(2);
+        //list.remove(3); // IndexOutOfBoundsException
+        list.remove(sb1);
+        for (StringBuilder sb : list) {
+            System.out.println(sb); // World!
+        }
+    }
+}
+```
+
+Пример 2-й:
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Python");
+        list.add("C++");
+        list.add(1, "JavaScript");
+        list.add("Java"); // Adding duplicate
+        //list.add(7, "Java"); // Adding at index 7 (out of bounds, will throw an exception)
+
+        for (String string : list) {
+            System.out.println(string);
+        }
+        
+        System.out.println();
+        
+        System.out.println("list.get(3) = " + list.get(3));
+        // System.out.println("list.get(7) = " + list.get(7)); // This will throw an exception
+        
+        System.out.println();
+        
+        // list.set(1, "!!!");
+        list.remove("Java"); // Removes first occurrence of "Java"
+        list.remove("JavaScript"); // Removes "JavaScript"
+        for (String s: list) {
+            System.out.print(s + " "); //
+        }
+    }
+}
+```
+
+Добавление элементов из другого `ArrayList` либо начиная с конкретного index либо в конец:
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Python");
+        list.add("C++");
+        list.add(1, "JavaScript");
+        list.add("Java"); // Adding duplicate
+        //list.add(7, "Java"); // Adding at index 7 (out of bounds, will throw an exception)
+
+        for (String string : list) {
+            System.out.println(string);
+        }
+        
+        System.out.println();
+        
+        System.out.println("list.get(3) = " + list.get(3));
+        // System.out.println("list.get(7) = " + list.get(7)); // This will throw an exception
+        
+        System.out.println();
+        
+        ArrayList<String> list2 = new ArrayList<>();
+
+        list2.add("Assemble");
+        list2.add("Pascal");
+        list.addAll(list2); // Adding all elements from list2 to list)
+        // list.addAll(1, list2); // Adding all elements from list2 at index 1
+        // list.set(1, "!!!");
+        // list.remove("Java"); // Removes first occurrence of "Java"
+        // list.remove("JavaScript"); // Removes "JavaScript"
+        for (String s: list) {
+            System.out.print(s + " "); //
+        }
+    }
+}
+```
+
+Быстрая очистка `ArrayList`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Java");
+        list.add("Python");
+        list.add("C++");
+        list.add(1, "JavaScript");
+        list.add("Java"); // Adding duplicate
+        //list.add(7, "Java"); // Adding at index 7 (out of bounds, will throw an exception)
+
+        for (String string : list) {
+            System.out.println(string);
+        }
+        
+        System.out.println();
+        
+        System.out.println("list.get(3) = " + list.get(3));
+        // System.out.println("list.get(7) = " + list.get(7)); // This will throw an exception
+        
+        System.out.println();
+        
+        ArrayList<String> list2 = new ArrayList<>();
+
+        list2.add("Assemble");
+        list2.add("Pascal");
+        list.addAll(list2); // Adding all elements from list2 to list)
+        // list.addAll(1, list2); // Adding all elements from list2 at index 1
+        // list.set(1, "!!!");
+        // list.remove("Java"); // Removes first occurrence of "Java"
+        // list.remove("JavaScript"); // Removes "JavaScript"
+        for (String s: list) {
+            System.out.print(s + " "); //
+        }
+        list.clear(); // Clear all elements from the list
+        System.out.println();
+        System.out.println("list.size() = " + list.size()); // Size of the list
+        for (String s: list) {
+            System.out.print(s + " "); // This will not print anything as the list is empty
+        }
+    }
+}
+```
+
+Возврат индекса самого первого обнаруженного элемента
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList2 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add(new String("Java"));
+        list.add(new String("Python"));
+        list.add(new String("C++"));
+        list.add(new String("JavaScript"));
+        
+        for (String s : list) {
+            System.out.print(s + " ");
+        }
+        System.out.println("\n" + list.indexOf(new String("Java"))); // 0
+    }
+}
+```
+
+Возврат индекса самого последнего обнаруженного элемента
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList2 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add(new String("Java"));
+        list.add(new String("Python"));
+        list.add(new String("C++"));
+        list.add(new String("JavaScript"));
+
+        System.out.println(list.lastIndexOf(new String("C++"))); // 3
+    }
+}
+```
+
+Возврат размера массива
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList2 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add(new String("Java"));
+        list.add(new String("Python"));
+        list.add(new String("C++"));
+        list.add(new String("JavaScript"));
+
+        System.out.println(list.size()); // 4
+    }
+}
+```
+
+Проверка пустой ли `ArrayList`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList2 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add(new String("Java"));
+        list.add(new String("Python"));
+        list.add(new String("C++"));
+        list.add(new String("JavaScript"));
+
+        System.out.println(list.isEmpty()); // false
+    }
+}
+```
+
+Проверка есть ли такой объект или нет
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList2 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add(new String("Java"));
+        list.add(new String("Python"));
+        list.add(new String("C++"));
+        list.add(new String("JavaScript"));
+
+        System.out.println(list.contains(new String("Java"))); // true
+    }
+}
+```
+
+Возврат `String` из массива `ArrayList`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList2 {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add(new String("Java"));
+        list.add(new String("Python"));
+        list.add(new String("C++"));
+        list.add(new String("JavaScript"));
+
+        System.out.println(list.toString());
+    }
+}
+```
+
+Клонирование с помощью метода `clone()`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList3 {
+    public static void main(String[] args) {
+        StringBuilder sb1 = new StringBuilder("A");
+        StringBuilder sb2 = new StringBuilder("B");
+        StringBuilder sb3 = new StringBuilder("C");
+        ArrayList<StringBuilder> list = new ArrayList<>();
+        list.add(sb1);
+        list.add(sb2);
+        list.add(sb3);
+        ArrayList<StringBuilder> newList = (ArrayList<StringBuilder>)list.clone();
+        System.out.println(list == newList); // false
+        System.out.println(list.get(0) == newList.get(0)); // true
+        list.get(0).append("!");
+        list.set(0, new StringBuilder("D"));
+        System.out.println(newList.get(0));
+    }
+}
+```
+
+Перевод `ArrayList` в `Array`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList3 {
+    public static void main(String[] args) {
+        StringBuilder sb1 = new StringBuilder("A");
+        StringBuilder sb2 = new StringBuilder("B");
+        StringBuilder sb3 = new StringBuilder("C");
+        ArrayList<StringBuilder> list = new ArrayList<>();
+        list.add(sb1);
+        list.add(sb2);
+        list.add(sb3);
+
+        Object[] array = list.toArray();
+        for (Object element : array) {
+            System.out.print(element + " ");
+        }
+        StringBuilder[] array2 = list.toArray(new StringBuilder[10]);
+        for (StringBuilder element : array2) {
+            System.out.print(element + " ");
+        }
+    }
+}
+```
+
+Получение из массивов, массив типа `List`
+
+```java
+package lesson20;
+
+import java.util.*;
+
+public class AllAboutMethodsArrayList3 {
+    public static void main(String[] args) {
+        StringBuilder sb1 = new StringBuilder("A");
+        StringBuilder sb2 = new StringBuilder("B");
+        StringBuilder sb3 = new StringBuilder("C");
+        ArrayList<StringBuilder> list = new ArrayList<>();
+        list.add(sb1);
+        list.add(sb2);
+        list.add(sb3);
+
+        StringBuilder[] array3 = {sb1, sb2, sb3, sb3};
+        List<StringBuilder> list2 = Arrays.asList(array3);
+        System.out.println(list2);
+        array3[0].append("!");
+        System.out.println(list2);
+        array3[0] = new StringBuilder("!!!!");
+        System.out.println(list2);
+    }
+}
+```
+
+Сортировка массивов с помощью класса `Collections`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class AllAboutMethodsArrayList4 {
+    public static void main(String[] args) {
+        String s1 = "A";
+        String s2 = "B";
+        String s3 = "C";
+        String s4 = "D";
+        ArrayList<String> list = new ArrayList<>();
+        
+        list.add(s3);
+        list.add(s1);
+        list.add(s4);
+        list.add(s2);
+        System.out.println("Before: " + list);
+        Collections.sort(list);
+        System.out.println("After: " + list);
+    }
+}
+```
+
+Проверка равны ли 2 объекта `ArrayList`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+
+public class AllAboutMethodsArrayList4 {
+    public static void main(String[] args) {
+        String s1 = "A";
+        String s2 = "B";
+        String s3 = "C";
+        String s4 = "D";
+        ArrayList<String> list = new ArrayList<>();
+        
+        list.add(s3);
+        list.add(s1);
+        list.add(s4);
+        list.add(s2);
+
+        ArrayList<String> list2 = list;
+        System.out.println(list.equals(list2)); // true 
+    }
+}
+```
+
+### Iterator & ListIterator
+
+Пример работы `Iterator`
+
+```java
+package lesson20;
+
+import java.util.Iterator;
+import java.util.ArrayList;
+
+public class IteratorAndListIterator {
+    public static void main(String[] args) {
+         String s1 = "A";
+        String s2 = "B";
+        String s3 = "C";
+        String s4 = "D";
+        ArrayList<String> list = new ArrayList<>();
+        
+        list.add(s3);
+        list.add(s1);
+        list.add(s4);
+        list.add(s2);
+
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            String element = iterator.next();
+            System.out.println(element);
+        }
+        System.out.println("List size: " + list.size());
+        System.out.println("List contents: " + list);
+    }
+}
+```
+
+Пример работы `ListIterator`
+
+```java
+package lesson20;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class IteratorAndListIterator {
+    public static void main(String[] args) {
+         String s1 = "A";
+        String s2 = "B";
+        String s3 = "C";
+        String s4 = "D";
+        ArrayList<String> list = new ArrayList<>();
+        
+        list.add(s3);
+        list.add(s1);
+        list.add(s4);
+        list.add(s2);
+
+        ListIterator<String> iterator = list.listIterator();
+        while (iterator.hasNext()) {
+            iterator.next();
+            iterator.remove();
+        }
+        System.out.println("List size: " + list.size());
+        System.out.println("List contents: " + list);
+    }
+}
+```
+
+Код доступен в файлах: [AllAboutArrayList.java](./lesson20/AllAboutArrayList.java), [AllAboutMethodsArrayList.java](./lesson20/AllAboutMethodsArrayList.java), [AllAboutMethodsArrayList2.java](./lesson20/AllAboutMethodsArrayList2.java), [AllAboutMethodsArrayList3.java](./lesson20/AllAboutMethodsArrayList3.java), [AllAboutMethodsArrayList4.java](./lesson20/AllAboutMethodsArrayList4.java), [ReplaceElementsArrayListWithoutMethods.java](./lesson20/ReplaceElementsArrayListWithoutMethods.java), [IteratorAndListIterator.java](./lesson20/IteratorAndListIterator.java).
+
