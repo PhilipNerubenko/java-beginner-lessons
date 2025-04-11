@@ -49,9 +49,9 @@ public class ConceptOfImportAndStaticImportAndViewComments {
      * Multiline comments
      */
     /**
-    * Javadoc-комментарий
-    * @author Автор
-    * @version 1.0
-    */
+     * Javadoc-комментарий
+     * @author Автор
+     * @version 1.0
+     */
   }
 }
