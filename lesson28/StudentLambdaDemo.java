@@ -2,9 +2,10 @@ package lesson28;
 
 import java.util.ArrayList;
 
-public class StudentLambdaDemo {
-    
-}
+/**
+* A class that demonstrates the student lambda in Java.
+*/
+public class StudentLambdaDemo {}
 
 // class Student {
 //     String name;
@@ -20,7 +21,7 @@ public class StudentLambdaDemo {
 //         this.course = course;
 //         this.avgGrade = avgGrade;
 //     }
-   
+  
 // }
 
 // class StudentInfo {
