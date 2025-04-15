@@ -1,187 +1,187 @@
 # Java Beginner Lessons
 
-## Предварительные требования
+## Prerequisites
 
-Для успешного прохождения курса необходимо:
+To successfully complete the course, you will need:
 
-### Программное обеспечение
+### Software Requirements
 
-- Java Development Kit (JDK) 8 или выше
-- Интегрированная среда разработки (IDE):
-  - IntelliJ IDEA (рекомендуется)
+- Java Development Kit (JDK) 8 or higher
+- Integrated Development Environment (IDE):
+  - IntelliJ IDEA (recommended)
   - Eclipse
-  - Visual Studio Code с расширениями для Java
-- Git для работы с репозиторием
+  - Visual Studio Code with Java extensions
+- Git for repository management
 
-### Базовые знания
+### Basic Knowledge
 
-- Основы работы с компьютером
-- Понимание базовых концепций программирования
-- Базовое знание английского языка для чтения технической документации
+- Familiarity with basic computer operations
+- Understanding of fundamental programming concepts
+- Basic English proficiency for reading technical documentation
 
-### Системные требования
+### System Requirements
 
-- Минимум 4 ГБ оперативной памяти
-- 2 ГБ свободного места на диске
-- Операционная система:
+- Minimum 4 GB of RAM
+- 2 GB of free disk space
+- Operating System:
   - Windows 7/8/10
-  - macOS 10.14 или выше
-  - Linux (любой современный дистрибутив)
+  - macOS 10.14 or higher
+  - Linux (any modern distribution)
 
-## Содержание
+## Contents
 
-1. [Урок 1: Вывод в консоль](#урок-1-вывод-в-консоль)
-2. [Урок 2: Примитивные типы данных и литералы](#урок-2-примитивные-типы-данных-и-литералы)
-3. [Урок 3: Арифметические, логические, операции присваивания и сравнения](#урок-3-арифметические-логические-операции-присваивания-и-сравнения)
-4. [Урок 4: Основы ООП — Классы, объекты и ссылочные типы](#урок-4-основы-ооп--классы-объекты-и-ссылочные-типы)
-5. [Урок 5: Создание объектов, конструкторы и вызов методов](#урок-5-создание-объектов-конструкторы-и-вызов-методов)
-6. [Урок 6: Перегрузка методов и конструкторов (overloading). Ключевое слово this](#урок-6-перегрузка-методов-и-конструкторов-overloading-ключевое-слово-this)
-7. [Урок 7: Понятие package. Модификаторы видимости (Access Modifiers)](#урок-7-понятие-package-модификаторы-видимости-access-modifiers)
-8. [Урок 8: Понятие константа. Модификаторы «final» и «static»](#урок-8-понятие-константа-модификаторы-final-и-static)
-9. [Урок 9: Разновидности переменных и пределы их видимости](#урок-9-разновидности-переменных-и-пределы-их-видимости)
-10. [Урок 10: Понятия import и import static. Использование комментариев](#урок-10-понятия-import-и-import-static-использование-комментариев)
-11. [Урок 11: Использование примитивных и ссылочных типов данных при вызове метода](#урок-11-использование-примитивных-и-ссылочных-типов-данных-при-вызове-метода)
-12. [Урок 12: Конструкции if и if else. Ternary оператор](#урок-12-конструкции-if-и-if-else-ternary-оператор)
-13. [Урок 13: Конструкция switch](#урок-13-конструкция-switch)
-14. [Урок 14: Классический цикл for. Выражения break и continue](#урок-14-классический-цикл-for-выражения-break-и-continue)
-15. [Урок 15: Циклы while и do while](#урок-15-циклы-while-и-do-while)
-16. [Урок 16: Всё о классе String](#урок-16-всё-о-классе-string)
-17. [Урок 17: Всё о классе StringBuilder](#урок-17-всё-о-классе-stringbuilder)
-18. [Урок 18: Понятие массив. Работа с массивами](#урок-18-понятие-массив-работа-с-массивами)
-19. [Урок 19: Параметры метода типа varargs. Аргументы типа command line. Цикл foreach](#урок-19-параметры-метода-типа-varargs-аргументы-типа-command-line-цикл-foreach)
-20. [Урок 20: Всё о классе ArrayList](#урок-20-всё-о-классе-arraylist)
-21. [Урок 21: Понятие инкапсуляция, наследование и модификатор protected](#урок-21-понятие-инкапсуляция-наследование-и-модификатор-protected)
-22. [Урок 22: Перезаписанные и скрытые методы. Runtime binding и compile time binding](#урок-22-перезаписанные-и-скрытые-методы-runtime-binding-и-compile-time-binding)
-23. [Урок 23: Абстрактные классы, абстрактные методы и интерфейсы](#урок-23-абстрактные-классы-абстрактные-методы-и-интерфейсы)
-24. [Урок 24: Понятие полиморфизм. Операторы instanceof и приведение типов](#урок-24-понятие-полиморфизм-операторы-instanceof-и-приведение-типов)
-25. [Урок 25: Методы equals() и toString(). Wrapper classes. Перегрузка методов и порядок инициализации](#урок-25-методы-equals-и-tostring-wrapper-classes-перегрузка-методов-и-порядок-инициализации)
-26. [Урок 26: Исключения и их обработка. Try-catch blocks](#урок-26-исключения-и-их-обработка-try-catch-blocks)
-27. [Урок 27: Классы LocalDate, LocalTime, LocalDateTime. Date-Time API](#урок-27-классы-localdate-localtime-localdatetime-date-time-api)
-28. [Урок 28: Lambda выражения. Predicate интерфейс](#урок-28-lambda-выражения-predicate-интерфейс)
+1. [Lesson 1: Console Output](#lesson-1-console-output)  
+2. [Lesson 2: Primitive Data Types and Literals](#lesson-2-primitive-data-types-and-literals)  
+3. [Lesson 3: Arithmetic, Logical, Assignment, and Comparison Operations](#lesson-3-arithmetic-logical-assignment-and-comparison-operations)  
+4. [Lesson 4: Basics of OOP — Classes, Objects, and Reference Types](#lesson-4-basics-of-oop--classes-objects-and-reference-types)  
+5. [Lesson 5: Creating Objects, Constructors, and Method Calls](#lesson-5-creating-objects-constructors-and-method-calls)  
+6. [Lesson 6: Method and Constructor Overloading (overloading). The `this` Keyword](#lesson-6-method-and-constructor-overloading-overloading-the-this-keyword)  
+7. [Lesson 7: The Concept of `package`. Access Modifiers](#lesson-7-the-concept-of-package-access-modifiers)  
+8. [Lesson 8: The Concept of `Constant`. Modifiers `final` and `static`](#lesson-8-the-concept-of-constant-modifiers-final-and-static)  
+9. [Lesson 9: Types of Variables and Their Scope](#lesson-9-types-of-variables-and-their-scope)  
+10. [Lesson 10: Concepts of `import` and `import static`. Using Comments](#lesson-10-concepts-of-import-and-import-static-using-comments)  
+11. [Lesson 11: Using Primitive and Reference Data Types in Method Calls](#lesson-11-using-primitive-and-reference-data-types-in-method-calls)  
+12. [Lesson 12: `if` and `if else` Constructs. Ternary Operator](#lesson-12-if-and-if-else-constructs-ternary-operator)  
+13. [Lesson 13: The `switch` Statement](#lesson-13-the-switch-statement)  
+14. [Lesson 14: The Classic `for` Loop. `break` and `continue` Statements](#lesson-14-the-classic-for-loop-break-and-continue-statements)  
+15. [Lesson 15: `while` and `do while` Loops](#lesson-15-while-and-do-while-loops)  
+16. [Lesson 16: All About the `String` Class](#lesson-16-all-about-the-string-class)  
+17. [Lesson 17: All About the `StringBuilder` Class](#lesson-17-all-about-the-stringbuilder-class)  
+18. [Lesson 18: Arrays and Working with Arrays](#lesson-18-arrays-and-working-with-arrays)  
+19. [Lesson 19: Method Parameters of Type `varargs`, Command Line Arguments, and `foreach` Loop](#lesson-19-method-parameters-of-type-varargs-command-line-arguments-and-foreach-loop)  
+20. [Lesson 20: All About the `ArrayList` Class](#lesson-20-all-about-the-arraylist-class)  
+21. [Lesson 21: Encapsulation, Inheritance, and the `protected` Modifier](#lesson-21-encapsulation-inheritance-and-the-protected-modifier)  
+22. [Lesson 22: Overridden and Hidden Methods. Runtime Binding and Compile Time Binding](#lesson-22-overridden-and-hidden-methods-runtime-binding-and-compile-time-binding)  
+23. [Lesson 23: Abstract Classes, Abstract Methods, and Interfaces](#lesson-23-abstract-classes-abstract-methods-and-interfaces)  
+24. [Lesson 24: The Concept of Polymorphism. `instanceof` Operator and Type Casting](#lesson-24-the-concept-of-polymorphism-instanceof-operator-and-type-casting)  
+25. [Lesson 25: Methods `equals()` and `toString()`. Wrapper Classes. Method Overloading and Initialization Order](#lesson-25-methods-equals-and-tostring-wrapper-classes-method-overloading-and-initialization-order)  
+26. [Lesson 26: Exceptions and Their Handling. Try-catch Blocks](#lesson-26-exceptions-and-their-handling-try-catch-blocks)  
+27. [Lesson 27: Classes `LocalDate`, `LocalTime`, `LocalDateTime`. Date-Time API](#lesson-27-classes-localdate-localtime-localdatetime-date-time-api)  
+28. [Lesson 28: Lambda Expressions and the Predicate Interface](#lesson-28-lambda-expressions-and-the-predicate-interface)  
 
-## Урок 1: Вывод в консоль
+## Lesson 1: Console Output
 
-В этом уроке мы изучаем два основных метода вывода в консоль:
+In this lesson, we study two main methods for console output:
 
-- **`System.out.println()`** — вывод с переводом строки.  
-- **`System.out.print()`** — вывод без перевода строки.
+- **`System.out.println()`** — outputs with a newline.  
+- **`System.out.print()`** — outputs without a newline.
 
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World!"); // С переводом строки
-        System.out.print("Hello "); // Без перевода строки
-        System.out.print("World!"); // Продолжение на той же строке
+        System.out.println("Hello World!"); // With a newline
+        System.out.print("Hello "); // Without a newline
+        System.out.print("World!"); // Continues on the same line
     }
 }
 ```
 
-![Пример работы методов вывода](./images/exampleUsePrintlnAndPrintLesson1.png)
-*Рис. 1.1 – Пример вывода*
+![Example of output methods](./images/exampleUsePrintlnAndPrintLesson1.png)  
+*Fig. 1.1 – Example of output*
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [HelloWorld.java](./lesson1/HelloWorld.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 2: Примитивные типы данных и литералы
+## Lesson 2: Primitive Data Types and Literals
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Примитивные типы данных:
-  - Целочисленные: `byte`, `short`, `int`, `long`
-  - С плавающей точкой: `float`, `double`
-  - Символьный: `char`
-  - Логический: `boolean`
-- Представление чисел в двоичном, восьмеричном и шестнадцатиричном форматах
-- Использование литерала с подчеркиванием (начиная с Java 7)
+- Primitive data types:
+    - Integer types: `byte`, `short`, `int`, `long`
+    - Floating-point types: `float`, `double`
+    - Character type: `char`
+    - Boolean type: `boolean`
+- Representing numbers in binary, octal, and hexadecimal formats
+- Using underscores in numeric literals (introduced in Java 7)
 
-### Примитивные типы данных
+### Primitive Data Types
 
-| Тип | Размер | Диапазон | Пример |
-|-----|--------|----------|---------|
-| byte | 8 бит | -128 до 127 | `byte b = 100;` |
-| short | 16 бит | -32,768 до 32,767 | `short s = 1000;` |
-| int | 32 бита | -2^31 до 2^31-1 | `int i = 10000;` |
-| long | 64 бита | -2^63 до 2^63-1 | `long l = 100000L;` |
-| float | 32 бита | ~3.4e-038 до ~3.4e+038 | `float f = 123.45f;` |
-| double | 64 бита | ~1.7e-308 до ~1.7e+308 | `double d = 123.45;` |
-| char | 16 бит | 0 до 65,535 | `char c = 'A';` |
-| boolean | - | true или false | `boolean b = true;` |
+| Type    | Size    | Range                     | Example            |
+|---------|---------|---------------------------|--------------------|
+| byte    | 8 bits  | -128 to 127               | `byte b = 100;`    |
+| short   | 16 bits | -32,768 to 32,767         | `short s = 1000;`  |
+| int     | 32 bits | -2^31 to 2^31-1           | `int i = 10000;`   |
+| long    | 64 bits | -2^63 to 2^63-1           | `long l = 100000L;`|
+| float   | 32 bits | ~3.4e-038 to ~3.4e+038    | `float f = 123.45f;`|
+| double  | 64 bits | ~1.7e-308 to ~1.7e+308    | `double d = 123.45;`|
+| char    | 16 bits | 0 to 65,535               | `char c = 'A';`    |
+| boolean | -       | true or false             | `boolean b = true;`|
 
-### Форматы записи чисел
+### Number Formats
 
 ```java
-// Десятичный
+// Decimal
 int decimal = 123;
 
-// Двоичный (0b prefix)
+// Binary (0b prefix)
 int binary = 0b1111011;
 
-// Восьмеричный (0 prefix)
+// Octal (0 prefix)
 int octal = 0173;
 
-// Шестнадцатеричный (0x prefix)
+// Hexadecimal (0x prefix)
 int hex = 0x7B;
 
-// С подчеркиванием
+// Using underscores
 int million = 1_000_000;
 ```
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [PrimitiveDataTypes.java](./lesson2/PrimitiveDataTypes.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+    <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 3: Арифметические, логические, операции присваивания и сравнения
+## Lesson 3: Arithmetic, Logical, Assignment, and Comparison Operations
 
-В этом уроке рассматриваются основные типы операций в Java:
+This lesson covers the main types of operations in Java:
 
-1. **Арифметические:** `+`, `-`, `*`, `/`, `%`
-2. **Операции сравнения:** `==`, `!=`, `>`, `<`, `>=`, `<=`
-3. **Логические операции:** `&&`, `||`, `!`
-4. **Операции присваивания:** `=`, `+=`, `-=`, `*=`, `/=`
+1. **Arithmetic Operations:** `+`, `-`, `*`, `/`, `%`
+2. **Comparison Operations:** `==`, `!=`, `>`, `<`, `>=`, `<=`
+3. **Logical Operations:** `&&`, `||`, `!`
+4. **Assignment Operations:** `=`, `+=`, `-=`, `*=`, `/=`
 
-Код урока доступен в файле: [ArithmeticAndLogicaAndAssignmentAndRelationalOperations.java](./lesson3/ArithmeticAndLogicaAndAssignmentAndRelationalOperations.java).
+The lesson code is available in the file: [ArithmeticAndLogicalAndAssignmentAndRelationalOperations.java](./lesson3/ArithmeticAndLogicalAndAssignmentAndRelationalOperations.java).
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+    <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 4: Основы ООП — Классы, объекты и ссылочные типы
+## Lesson 4: Basics of OOP — Classes, Objects, and Reference Types
 
-### Основные концепции
+### Key Concepts
 
-- **Класс** — шаблон/чертеж для создания объектов
-- **Объект** — экземпляр класса в памяти
-- **Ссылочный тип** — тип данных, хранящий ссылку на объект
+- **Class** — A blueprint/template for creating objects.
+- **Object** — An instance of a class in memory.
+- **Reference Type** — A data type that stores a reference to an object.
 
-### Отличия от примитивных типов
+### Differences from Primitive Types
 
-| Характеристика | Примитивные типы | Ссылочные типы |
-|----------------|------------------|-----------------|
-| Хранение | Значение напрямую | Ссылка на объект |
-| Размер | Фиксированный | Зависит от объекта |
-| Инициализация | Обязательна | По умолчанию `null` |
-| Примеры | `int`, `boolean` и т.д. | `String`, массивы, классы |
+| Characteristic      | Primitive Types         | Reference Types       |
+|---------------------|-------------------------|-----------------------|
+| Storage             | Directly stores value  | Stores reference to object |
+| Size                | Fixed                  | Depends on the object |
+| Initialization      | Mandatory              | Defaults to `null`    |
+| Examples            | `int`, `boolean`, etc. | `String`, arrays, classes |
 
-### Пример классов
+### Example Classes
 
 ```java
 public class Car {
-    // Поля класса
+    // Class fields
     String color = "red";
     String engine = "v6";
 }
@@ -189,51 +189,51 @@ public class Car {
 
 ```java
 public class BankAccount {
-    // Поля класса
+    // Class fields
     int id;
     String name;
     double balance;
 }
 ```
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
 - [Car.java](./lesson4/Car.java)
 - [BankAccount.java](./lesson4/BankAccount.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 5: Создание объектов, конструкторы и вызов методов
+## Lesson 5: Creating Objects, Constructors, and Method Calls
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Процесс создания объектов
-- Концепция конструктора
-- Объявление и вызов методов
+- The process of creating objects
+- The concept of constructors
+- Declaring and calling methods
 
-### Создание объектов
+### Creating Objects
 
 ```java
 public class Car {
     String color;
     String engine;
     
-    // Конструктор
+    // Constructor
     Car(String color, String engine) {
         this.color = color;
         this.engine = engine;
     }
 }
 
-// Создание объекта
+// Creating an object
 Car myCar = new Car("red", "V6");
 ```
 
-### Конструкторы
+### Constructors
 
 ```java
 public class Human {
@@ -241,12 +241,12 @@ public class Human {
     Car car;
     BankAccount account;
     
-    // Конструктор без параметров
+    // Constructor without parameters
     Human() {
         this("Default", null, null);
     }
     
-    // Конструктор с параметрами
+    // Constructor with parameters
     Human(String name, Car car, BankAccount account) {
         this.name = name;
         this.car = car;
@@ -255,7 +255,7 @@ public class Human {
 }
 ```
 
-### Методы
+### Methods
 
 ```java
 public class Car2 {
@@ -263,13 +263,13 @@ public class Car2 {
     String engine;
     int speed;
     
-    // Метод увеличения скорости
+    // Method to increase speed
     int accelerate(int acceleration) {
         speed += acceleration;
         return speed;
     }
     
-    // Метод уменьшения скорости
+    // Method to decrease speed
     int brake(int deceleration) {
         speed -= deceleration;
         return speed;
@@ -277,7 +277,7 @@ public class Car2 {
 }
 ```
 
-### Вызов методов
+### Calling Methods
 
 ```java
 class Car2Test {
@@ -285,14 +285,14 @@ class Car2Test {
         Car2 car = new Car2();
         car.speed = 60;
 
-        // Вызов методов
+        // Calling methods
         car.accelerate(20);  // speed = 80
         car.brake(80);       // speed = 0
     }
 }
 ```
 
-### Пример работы с методами: создание и вызов
+### Example of Method Usage: Creation and Invocation
 
 ```java
 public class ConceptAndMethodCall {
@@ -314,7 +314,7 @@ class Test {
 }
 ```
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
 - [Car.java](./lesson5/Car.java)
 - [Car2.java](./lesson5/Car2.java)
@@ -322,51 +322,51 @@ class Test {
 - [Human.java](./lesson5/Human.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 6: Перегрузка методов и конструкторов (`overloading`). Ключевое слово `this`
+## Lesson 6: Method and Constructor Overloading (`overloading`). The `this` Keyword
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Перегрузка (`overloading`) методов и конструкторов
-- Использование ключевого слова `this`
+- Overloading methods and constructors
+- Using the `this` keyword
 
-### Перегрузка методов
+### Method Overloading
 
-Перегрузка позволяет объявлять несколько методов с одинаковым именем, но разными параметрами.  
+Overloading allows defining multiple methods with the same name but different parameters.
 
 ```java
 public class MathUtils {
-    // Метод с одним параметром
+    // Method with one parameter
     int sum(int a) {
         return a;
     }
     
-    // Перегруженный метод с двумя параметрами
+    // Overloaded method with two parameters
     int sum(int a, int b) {
         return a + b;
     }
 }
 ```
 
-### Перегрузка конструкторов
+### Constructor Overloading
 
-Перегрузка конструкторов позволяет создавать объекты разными способами.
+Constructor overloading allows creating objects in different ways.
 
 ```java
 public class Car {
     String model;
     int year;
 
-    // Конструктор без параметров
+    // Constructor without parameters
     public Car() {
         this("Unknown", 2000);
     }
 
-    // Конструктор с параметрами
+    // Constructor with parameters
     public Car(String model, int year) {
         this.model = model;
         this.year = year;
@@ -374,53 +374,53 @@ public class Car {
 }
 ```
 
-### Использование ключевого слова `this`
+### Using the `this` Keyword
 
-- Для обращения к полям класса
-- Для вызова других конструкторов
-- Для передачи текущего объекта
+- To refer to class fields
+- To call other constructors
+- To pass the current object
 
 ```java
 public class Employee {
     String name;
     int age;
     
-    // Использование this для полей
+    // Using `this` for fields
     public Employee(String name, int age) {
         this.name = name;
         this.age = age;
     }
     
-    // Использование this() для вызова другого конструктора
+    // Using `this()` to call another constructor
     public Employee() {
         this("Unknown", 0);
     }
 }
 ```
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
 - [MethodOverloading.java](./lesson6/MethodOverloading.java)
 - [MethodOverloading2.java](./lesson6/MethodOverloading2.java)
 - [EmployeeConstructorOverloading.java](./lesson6/EmployeeConstructorOverloading.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 7: Понятие `package`. Модификаторы видимости (Access Modifiers)
+## Lesson 7: The Concept of `package`. Access Modifiers
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Понятие `package` и его использование
-- Модификаторы доступа (`private`, `default`, `protected`, `public`)
+- The concept of `package` and its usage
+- Access modifiers (`private`, `default`, `protected`, `public`)
 
-### Пакеты (`package`)
+### Packages (`package`)
 
-Пакеты используются для организации классов и предотвращения конфликтов имен.  
-Пример объявления пакета:  
+Packages are used to organize classes and prevent name conflicts.  
+Example of declaring a package:
 
 ```java
 package lesson7;
@@ -432,7 +432,7 @@ public class Example {
 }
 ```
 
-Использование класса из другого пакета:
+Using a class from another package:
 
 ```java
 import lesson7.Example;
@@ -445,18 +445,18 @@ public class Main {
 }
 ```
 
-### Модификаторы доступа
+### Access Modifiers
 
-Определяют область видимости классов, полей и методов.
+Access modifiers define the visibility of classes, fields, and methods.
 
-| Модификатор | Видимость внутри класса | Видимость внутри пакета | Видимость в подклассах | Видимость в других пакетах |
-|-------------|-------------------------|-------------------------|----------------------|---------------------------|
-| private | ✅ | ❌ | ❌ | ❌ |
-| (default) | ✅ | ✅ | ❌ | ❌ |
-| protected | ✅ | ✅ | ✅ | ❌ |
-| public | ✅ | ✅ | ✅ | ✅ |
+| Modifier    | Visible in Class | Visible in Package | Visible in Subclasses | Visible in Other Packages |
+|-------------|------------------|--------------------|-----------------------|---------------------------|
+| `private`   | ✅               | ❌                | ❌                   | ❌                        |
+| (default)   | ✅               | ✅                | ❌                   | ❌                        |
+| `protected` | ✅               | ✅                | ✅                   | ❌                        |
+| `public`    | ✅               | ✅                | ✅                   | ✅                        |
 
-### Пример модификаторов доступа
+### Example of Access Modifiers
 
 ```java
 package lesson7;
@@ -469,7 +469,7 @@ public class AccessExample {
 }
 ```
 
-Использование в другом классе в том же пакете:
+Usage in another class within the same package:
 
 ```java
 package lesson7;
@@ -477,15 +477,15 @@ package lesson7;
 public class TestAccess {
     public static void main(String[] args) {
         AccessExample example = new AccessExample();
-        // example.privateVar; // Ошибка: private-поле недоступно
-        System.out.println(example.defaultVar);  // Доступно
-        System.out.println(example.protectedVar); // Доступно
-        System.out.println(example.publicVar);    // Доступно
+        // example.privateVar; // Error: private field is not accessible
+        System.out.println(example.defaultVar);  // Accessible
+        System.out.println(example.protectedVar); // Accessible
+        System.out.println(example.publicVar);    // Accessible
     }
 }
 ```
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
 - [A.java](./lesson7/A.java)
 - [B.java](./lesson7/B.java)
@@ -494,39 +494,39 @@ public class TestAccess {
 - [ThirdClass.java](./lesson7_1/ThirdClass.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 8: Понятие `константа`. Модификаторы «final» и «static»
+## Lesson 8: The Concept of `Constant`. Modifiers `final` and `static`
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Понятие `константа` и его использование
-- Модификаторы (`final`, `static`)
+- The concept of `constant` and its usage
+- Modifiers (`final`, `static`)
 
-### `final` — неизменяемость
+### `final` — Immutability
 
-Модификатор `final` делает переменные, методы и классы неизменяемыми.
+The `final` modifier makes variables, methods, and classes immutable.
 
-#### 1. `final` для переменных
+#### 1. `final` for Variables
 
-Переменная с `final` может быть присвоена только один раз.
+A variable declared with `final` can only be assigned once.
 
 ```java
 public class FinalExample {
     final int CONSTANT = 10;
 
     void changeValue() {
-        // CONSTANT = 20; // Ошибка: нельзя изменить final-переменную
+        // CONSTANT = 20; // Error: cannot modify a final variable
     }
 }
 ```
 
-#### 2. `final` для методов
+#### 2. `final` for Methods
 
-Методы с `final` нельзя переопределить в наследуемых классах.
+Methods declared with `final` cannot be overridden in derived classes.
 
 ```java
 class Parent {
@@ -536,28 +536,28 @@ class Parent {
 }
 
 class Child extends Parent {
-    // void show() { } // Ошибка: нельзя переопределить final-метод
+    // void show() { } // Error: cannot override a final method
 }
 ```
 
-#### 3. `final` для классов
+#### 3. `final` for Classes
 
-Класс с `final` нельзя унаследовать.
+A class declared with `final` cannot be extended.
 
 ```java
 final class UnmodifiableClass {
 }
 
-// class SubClass extends UnmodifiableClass {} // Ошибка: нельзя наследовать final-класс
+// class SubClass extends UnmodifiableClass {} // Error: cannot inherit from a final class
 ```
 
-### `static` — принадлежность классу
+### `static` — Belonging to the Class
 
-Модификатор `static` делает переменные и методы принадлежащими классу, а не объектам.
+The `static` modifier makes variables and methods belong to the class rather than to instances.
 
-#### 1. `static` переменные
+#### 1. `static` Variables
 
-Общие для всех экземпляров класса.
+Shared among all instances of the class.
 
 ```java
 class Counter {
@@ -572,14 +572,14 @@ public class Main {
     public static void main(String[] args) {
         Counter c1 = new Counter();
         Counter c2 = new Counter();
-        System.out.println(Counter.count); // Выведет: 2
+        System.out.println(Counter.count); // Output: 2
     }
 }
 ```
 
-#### 2. `static` методы
+#### 2. `static` Methods
 
-Могут вызываться без создания объекта.
+Can be called without creating an object.
 
 ```java
 class StaticMethodExample {
@@ -590,14 +590,14 @@ class StaticMethodExample {
 
 public class Main {
     public static void main(String[] args) {
-        StaticMethodExample.greet(); // Вывод: Hello, world!
+        StaticMethodExample.greet(); // Output: Hello, world!
     }
 }
 ```
 
-#### 3. `static` блок
+#### 3. `static` Block
 
-Выполняется один раз при загрузке класса.
+Executed once when the class is loaded.
 
 ```java
 class StaticBlockExample {
@@ -612,12 +612,12 @@ public class Main {
         new StaticBlockExample();
     }
 }
-// Выведет "Static block executed." только один раз
+// Output: "Static block executed." only once
 ```
 
-### Константы (`static final`)
+### Constants (`static final`)
 
-Переменные, которые нельзя изменить и которые принадлежат классу.
+Variables that cannot be modified and belong to the class.
 
 ```java
 class MathConstants {
@@ -626,12 +626,12 @@ class MathConstants {
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(MathConstants.PI); // Вывод: 3.1415926535
+        System.out.println(MathConstants.PI); // Output: 3.1415926535
     }
 }
 ```
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
 - [Car.java](./lesson8/Car.java)
 - [Student.java](./lesson8/Student.java)
@@ -639,280 +639,280 @@ public class Main {
 - [StudentNonAccessStatic.java](./lesson8/StudentNonAccessStatic.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 9: Разновидности переменных и пределы их видимости
+## Lesson 9: Types of Variables and Their Scope
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Виды переменных в Java
-- Их область видимости и срок жизни
-- Отличия между локальными, экземплярными и статическими переменными
+- Types of variables in Java
+- Their scope and lifetime
+- Differences between local, instance, and static variables
 
-### Виды переменных
+### Types of Variables
 
-| Тип переменной | Где объявляется | Доступность | Срок жизни |
-|---------------|-----------------|-------------|------------|
-| Локальная | Внутри метода | Только в этом методе | Пока выполняется метод |
-| Экземпляра | Внутри класса (без `static`) | Для каждого объекта отдельно | Пока объект существует |
-| Статическая | Внутри класса с `static` | Одна на весь класс | Пока работает программа |
+| Variable Type   | Declared In         | Accessibility          | Lifetime                  |
+|------------------|---------------------|-------------------------|---------------------------|
+| Local            | Inside a method    | Only within the method | While the method executes |
+| Instance         | Inside a class (non-`static`) | Unique to each object | While the object exists   |
+| Static           | Inside a class with `static` | Shared across all objects | While the program runs    |
 
-### Локальные переменные
+### Local Variables
 
-Создаются внутри методов и доступны только там.  
-**Важно:** локальные переменные **не имеют значений по умолчанию** и **должны быть инициализированы**.
+Local variables are created inside methods and are only accessible there.  
+**Important:** Local variables **do not have default values** and **must be initialized**.
 
 ```java
 public void changeColor(String color) {
-    System.out.println("Новый цвет автомобиля: " + color);
-    @SuppressWarnings("unused") int price = 5000; // Локальная переменная
+    System.out.println("New car color: " + color);
+    int price = 5000; // Local variable
     price += 5000;
 }
 ```
 
-- Локальные переменные нельзя объявлять с модификаторами доступа (`public`, `private`)
-- Они недоступны за пределами метода
+- Local variables cannot have access modifiers (`public`, `private`, etc.).
+- They are not accessible outside the method.
 
-### Переменные экземпляра (поля класса)
+### Instance Variables (Class Fields)
 
-Хранят данные объекта и могут использоваться в разных методах.
+Instance variables store object-specific data and can be used across methods.
 
 ```java
-public class TypesOfVariablesAndLimitsOfTheirVisibilityCar {
-    String color; // Переменная экземпляра
+public class Car {
+    String color; // Instance variable
     int a = 10;
 }
 ```
 
-- Инициализируются автоматически (0 для чисел, false для `boolean`, `null` для объектов)
-- У каждой копии объекта свои значения
+- Automatically initialized (0 for numbers, `false` for `boolean`, `null` for objects).
+- Each object has its own copy of instance variables.
 
-Использование:
+Usage:
 
 ```java
 public void showColor() {
-    System.out.println("Цвет автомобиля: " + color);
+    System.out.println("Car color: " + color);
     changeColor("red");
 }
 ```
 
-### Статические переменные (переменные класса)
+### Static Variables (Class Variables)
 
-Общие для всех экземпляров класса.
+Static variables are shared across all instances of a class.
 
 ```java
-public static int count; // Статическая переменная
+public static int count; // Static variable
 ```
 
-- Существуют независимо от объектов
-- Меняются глобально для всех экземпляров
+- Exist independently of objects.
+- Changes affect all instances globally.
 
-Пример использования:
+Example usage:
 
 ```java
-public TypesOfVariablesAndLimitsOfTheirVisibilityCar(String color, String engine) {
+public Car(String color, String engine) {
     this.color = color;
     this.engine = engine;
-    count++; // Увеличение общего счетчика
+    count++; // Increment global counter
 }
 ```
 
-### Особенности именования переменных
+### Variable Naming Rules
 
-Разрешенные имена:
+Allowed names:
 
 ```java
-int aTypeOfWritingAvariable = 10;
-int ATypeOfWritingAvariable = 10;
-int _TypeOfWritingAvariable = 10;
-int $TypeOfWritingAvariable = 10;
-int atypeOfWritingAvariable56 = 10;
+int aTypeOfVariable = 10;
+int ATypeOfVariable = 10;
+int _TypeOfVariable = 10;
+int $TypeOfVariable = 10;
+int variable56 = 10;
 ```
 
-Запрещенные:
+Disallowed names:
 
 ```java
-int 56atype0fWritingAvariable = 10;  // Нельзя начинать с цифры
-int static = 10;  // Ключевое слово
+int 56variable = 10;  // Cannot start with a digit
+int static = 10;      // Reserved keyword
 int int = 10;
 int boolean = 10;
 int class = 10;
 ```
 
-Разрешено, но не рекомендуется:
+Allowed but not recommended:
 
 ```java
 int String = 10;
 int Class = 10;
 ```
 
-Рекомендуемая практика написания констант:
+Recommended practice for constants:
 
 ```java
-final int NOT_ALLOWED_TO_CHANGE_THIS_VALUE = 10; // Константа
+final int MAX_SPEED = 120; // Constant
 ```
 
-### Использование `this`
+### Using `this`
 
-Ключевое слово `this` используется для обращения к полям экземпляра внутри методов.
+The `this` keyword refers to the current object and is used to access instance variables within methods.
 
 ```java
-public TypesOfVariablesAndLimitsOfTheirVisibilityCar(String color, String engine) {
+public Car(String color, String engine) {
     this.color = color;
     this.engine = engine;
 }
 ```
 
-В методах `this` **не обязателен**, но его можно использовать:
+In methods, `this` is optional but can be used for clarity:
 
 ```java
 public void showColor() {
-    System.out.println("Цвет автомобиля: " + color);
-    this.changeColor("black"); // Использование this
+    System.out.println("Car color: " + color);
+    this.changeColor("black"); // Using `this`
 }
 ```
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
-- [TypesOfVariablesAndLimitsOfTheirVisibilityCar.java](./lesson9/TypesOfVariablesAndLimitsOfTheirVisibilityCar.java)
+- [Car.java](./lesson9/Car.java)
 - [Student.java](./lesson9/Student.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 10: Понятия `import` и `import static`. Использование комментариев
+## Lesson 10: Concepts of `import` and `import static`. Using Comments
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Понятия `import` и `import static`
-- Использование и виды комментариев
+- The concepts of `import` and `import static`
+- The usage and types of comments
 
-### `import` и `import static`
+### `import` and `import static`
 
-В Java классы из других пакетов можно импортировать с помощью `import`, а статические методы и переменные — с помощью `import static`.
+In Java, classes from other packages can be imported using `import`, while static methods and variables can be imported using `import static`.
 
-### Обычный импорт
+### Regular Import
 
 ```java
 import lesson9.TypesOfVariablesAndLimitsOfTheirVisibilityCar;
 import lesson9.Student;
 ```
 
-- Позволяет использовать классы без указания полного пути
-- **Не увеличивает размер файла**
-- **Нельзя импортировать два класса с одинаковым именем из разных пакетов**
+- Allows using classes without specifying the full path.
+- **Does not increase file size.**
+- **Cannot import two classes with the same name from different packages.**
 
 ```java
-// Ошибка! Нельзя импортировать две версии класса Student
+// Error! Cannot import two versions of the Student class
 import lesson9.Student;
 import lesson8.Student;
 ```
 
-Если классы имеют одинаковые имена, **используем полный путь**:
+If classes have the same name, **use the full path**:
 
 ```java
 lesson9.Student student1 = new lesson9.Student();
 lesson8.Student student2 = new lesson8.Student();
 ```
 
-### Импорт всех классов пакета
+### Importing All Classes in a Package
 
 ```java
 import lesson9.*;
 import lesson8.*;
 ```
 
-- Позволяет импортировать **все классы** из пакета
-- **Не импортирует классы из подпакетов**
+- Allows importing **all classes** from a package.
+- **Does not import classes from sub-packages.**
 
 ```java
-// Ошибка! lesson9.subpackage.* не импортируется автоматически
+// Error! lesson9.subpackage.* is not automatically imported
 import lesson9.*;
 import lesson9.subpackage.*;
 ```
 
-### import static
+### `import static`
 
-Позволяет использовать **статические** методы и переменные **без указания имени класса**.
+Allows using **static** methods and variables **without specifying the class name**.
 
 ```java
 import static lesson9.TypesOfVariablesAndLimitsOfTheirVisibilityCar.count;
 ```
 
-Эквивалентно:
+Equivalent to:
 
 ```java
 System.out.println(lesson9.TypesOfVariablesAndLimitsOfTheirVisibilityCar.count);
 ```
 
-С **import static** можно просто написать:
+With **`import static`**, you can simply write:
 
 ```java
 System.out.println(count);
 ```
 
-Импорт всех статических элементов:
+Importing all static members:
 
 ```java
 import static lesson9.TypesOfVariablesAndLimitsOfTheirVisibilityCar.*;
 ```
 
-### Комментарии в Java
+### Comments in Java
 
-| Тип | Синтаксис | Описание |
-|-----|-----|-----|
-| Однострочный | `//` | Комментарий до конца строки |
-| Многострочный | `/* ... */` | Комментарий на несколько строк |
-| Javadoc | `/** ... */` | Документация для классов и методов |
+| Type            | Syntax       | Description                          |
+|------------------|-------------|--------------------------------------|
+| Single-line      | `//`        | Comment until the end of the line    |
+| Multi-line       | `/* ... */` | Comment spanning multiple lines      |
+| Javadoc          | `/** ... */`| Documentation for classes and methods|
 
-Примеры:
+Examples:
 
 ```java
-// Однострочный комментарий
-int a = 5; // Может быть после выражения
+// Single-line comment
+int a = 5; // Can also be after a statement
 
 /* 
-   Многострочный комментарий 
-   Используется для больших блоков текста 
+    Multi-line comment 
+    Used for larger blocks of text 
 */
 
 /**
- * Javadoc-комментарий
- * @author Автор
+ * Javadoc comment
+ * @author Author
  * @version 1.0
  */
 public class Example { }
 ```
 
-Javadoc-генератор создает HTML-документацию на основе комментариев `/** ... */`.
+The Javadoc generator creates HTML documentation based on `/** ... */` comments.
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [ConceptOfImportAndStaticImportAndViewComments.java](./lesson10/ConceptOfImportAndStaticImportAndViewComments.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 11: Использование примитивных и ссылочных типов данных при вызове метода
+## Lesson 11: Using Primitive and Reference Data Types in Method Calls
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Передача **примитивных** типов данных в методы
-- Передача **ссылочных** типов данных в методы
-- Влияние изменений в методе на исходные переменные
+- Passing **primitive** data types to methods
+- Passing **reference** data types to methods
+- The effect of changes in the method on the original variables
 
-### Передача примитивных типов
+### Passing Primitive Types
 
-Примитивные типы (например, `int`, `double`) передаются **по значению** — передается копия числа, а не сама переменная.
+Primitive types (e.g., `int`, `double`) are passed **by value** — a copy of the value is passed, not the variable itself.
 
 ```java
 public double doubling(double a) {
@@ -921,7 +921,7 @@ public double doubling(double a) {
 }
 ```
 
-Вызов метода:
+Method call:
 
 ```java
 ArgumentsMethodEmployee employee1 = new ArgumentsMethodEmployee("Max", 500);
@@ -930,18 +930,18 @@ System.out.println("Value a, not salary = " + result);
 System.out.println("Salary = " + employee1.salary);
 ```
 
-Вывод:
+Output:
 
 ```java
 Value a, not salary = 1000.0
 Salary = 500.0
 ```
 
-- **Исходная переменная** `salary` **не изменилась**, так как метод работал с копией значения.
+- The **original variable** `salary` **remains unchanged** because the method works with a copy of the value.
 
-### Передача ссылочных типов
+### Passing Reference Types
 
-Ссылочные типы (объекты) передаются по значению ссылки, но сам объект можно изменять.
+Reference types (objects) are passed by the value of the reference, but the object itself can be modified.
 
 ```java
 public static void changeName(ArgumentsMethodStudent student) {
@@ -949,7 +949,7 @@ public static void changeName(ArgumentsMethodStudent student) {
 }
 ```
 
-Вызов метода:
+Method call:
 
 ```java
 ArgumentsMethodStudent st1 = new ArgumentsMethodStudent("Ivan", 3, 9.5);
@@ -957,15 +957,15 @@ changeName(st1);
 System.out.println(st1.name);
 ```
 
-Вывод:
+Output:
 
 ```bash
 Kolya
 ```
 
-- **Объект изменился**, так как метод модифицировал его поле `name`.
+- The **object is modified** because the method changes its `name` field.
 
-### Попытка обмена объектов (не сработает)
+### Attempt to Swap Objects (Does Not Work)
 
 ```java
 public static void swap(ArgumentsMethodStudent student1, ArgumentsMethodStudent student2) {
@@ -975,7 +975,7 @@ public static void swap(ArgumentsMethodStudent student1, ArgumentsMethodStudent 
 }
 ```
 
-Вызов:
+Method call:
 
 ```java
 ArgumentsMethodStudent st1 = new ArgumentsMethodStudent("Ivan", 3, 9.5);
@@ -985,63 +985,63 @@ System.out.println(st1.name);
 System.out.println(st2.name);
 ```
 
-Вывод:
+Output:
 
 ```bash
 Ivan
 Petr
 ```
 
-- **Переменные** `st1` **и** `st2` **не поменялись местами**, так как в метод передаются копии ссылок.
+- The **variables** `st1` **and** `st2` **do not swap places** because the method receives copies of the references.
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
 - [ArgumentsMethodEmployee.java](./lesson11/ArgumentsMethodEmployee.java)
 - [ArgumentsMethodStudent.java](./lesson11/ArgumentsMethodStudent.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 12: Конструкции `if` и `if else`. Ternary оператор
+## Lesson 12: `if` and `if else` Constructs. Ternary Operator
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Использование условных операторов `if` и `if else`
-- Применение тернарного оператора `? :` для выбора значений
+- Using conditional operators `if` and `if else`
+- Applying the ternary operator `? :` for value selection
 
-### Конструкция `if`
+### `if` Construct
 
-Позволяет выполнить код, если условие истинно (`true`).
+Executes code if the condition is true (`true`).
 
 ```java
 if (a > b) {
-    System.out.println("a больше b");
+    System.out.println("a is greater than b");
 }
 ```
 
-- Если a > b, сообщение будет выведено.
+- If `a > b`, the message will be printed.
 
-### Конструкция `if else`
+### `if else` Construct
 
-Используется, когда нужно разные действия в зависимости от условия.
+Used when different actions are needed depending on the condition.
 
 ```java
 if (a > b) {
-    System.out.println("a больше b");
+    System.out.println("a is greater than b");
 } else {
-    System.out.println("b больше либо равно a");
+    System.out.println("b is greater than or equal to a");
 }
 ```
 
-- Если `a > b`, выполняется первый блок
-- Если `a <= b`, выполняется `else`
+- If `a > b`, the first block is executed.
+- If `a <= b`, the `else` block is executed.
 
-### `if else if` (много условий)
+### `if else if` (Multiple Conditions)
 
-Используется, когда есть несколько альтернатив.
+Used when there are multiple alternatives.
 
 ```java
 void max(int a, int b, int c) {
@@ -1055,17 +1055,17 @@ void max(int a, int b, int c) {
 }
 ```
 
-### Тернарный оператор `? :`
+### Ternary Operator `? :`
 
-Позволяет заменить `if else` для присваивания значений.
+Replaces `if else` for assigning values.
 
-Формат:
+Format:
 
 ```java
-переменная = (условие) ? значение_если_true : значение_если_false;
+variable = (condition) ? value_if_true : value_if_false;
 ```
 
-Пример:
+Example:
 
 ```java
 int a = 10;
@@ -1074,69 +1074,69 @@ int max = (a > b) ? a : b;
 System.out.println("Max: " + max);
 ```
 
-Вывод:
+Output:
 
 ```bash
 Max: 15
 ```
 
-### Сравнительная таблица условных конструкций
+### Comparison Table of Conditional Constructs
 
-| Конструкция | Применение | Особенности |
-|-------------|------------|-------------|
-| `if` | Простая проверка условия | Только один блок кода |
-| `if else` | Выбор из двух вариантов | Всегда выполняется один из блоков |
-| `if else if` | Множественный выбор | Проверка нескольких условий |
-| Тернарный оператор | Присваивание по условию | Компактная запись для простых условий |
+| Construct       | Usage                     | Features                          |
+|------------------|---------------------------|------------------------------------|
+| `if`            | Simple condition check    | Only one block of code            |
+| `if else`       | Choose between two options| Always executes one of the blocks |
+| `if else if`    | Multiple conditions       | Checks several conditions         |
+| Ternary Operator| Assign value by condition | Compact for simple conditions     |
 
-Код урока доступен в файле:
+Lesson code is available in the file:
 
 - [FlowControlIfAndIfElseAndTernaryOperator.java](./lesson12/FlowControlIfAndIfElseAndTernaryOperator.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 13: Конструкция `switch`
+## Lesson 13: The `switch` Statement
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Использование `switch` для выбора одного из нескольких вариантов
-- Правила работы и допустимые типы данных в `switch`
-- Особенности и ограничения `switch`
+- Using `switch` to select one of several options
+- Rules and supported data types in `switch`
+- Features and limitations of `switch`
 
-### `switch` — альтернатива `if else`
+### `switch` — An Alternative to `if-else`
 
-Конструкция `switch` позволяет заменить множественные `if else`, когда сравниваем одно значение.
+The `switch` statement can replace multiple `if-else` blocks when comparing a single value.
 
 ```java
-switch (выражение) {
-    case значение1:
-        // код
+switch (expression) {
+    case value1:
+        // code
         break;
-    case значение2:
-        // код
+    case value2:
+        // code
         break;
     default:
-        // код, если нет совпадений
+        // code if no match
 }
 ```
 
-### Допустимые типы данных
+### Supported Data Types
 
-В `switch` можно использовать:
-✅ `byte`, `short`, `char`, `int`
-✅ `String` (начиная с Java 7)
+`switch` supports:
+✅ `byte`, `short`, `char`, `int`  
+✅ `String` (since Java 7)  
 ✅ `enum`
 
-❌ **Нельзя** использовать:
+❌ **Not Supported**:
 
 - `double`, `float`, `long`
-- Объекты (`Object`, `List` и т.д.)
+- Objects (`Object`, `List`, etc.)
 
-### Пример switch
+### Example of `switch`
 
 ```java
 class Student {
@@ -1154,24 +1154,24 @@ class Student {
                 System.out.println("Unsatisfactory");
                 break;
             case 3:
-                System.out.println("Satisfactorily");
+                System.out.println("Satisfactory");
                 break;
             case 4:
                 System.out.println("Good");
                 break;
             case 5:
-                System.out.println("Great");
+                System.out.println("Excellent");
                 break;
             default:
-                System.out.println("Unknown score");
+                System.out.println("Unknown grade");
         }
     }
 }
 ```
 
-### `case` и `final` переменные
+### `case` and `final` Variables
 
-✅ **Можно использовать final переменные**, если они константы времени компиляции:
+✅ **You can use `final` variables** if they are compile-time constants:
 
 ```java
 final int C = 1;
@@ -1182,91 +1182,91 @@ switch (C) {
 }
 ```
 
-❌ **Нельзя использовать переменные, вычисляемые во время выполнения**:
+❌ **You cannot use variables evaluated at runtime**:
 
 ```java
 int a = 2;
 switch (a) {  
-    case a * 2:  // Ошибка! `a * 2` вычисляется во время работы программы
-        System.out.println("Ошибка!");
+    case a * 2:  // Error! `a * 2` is evaluated at runtime
+        System.out.println("Error!");
         break;
 }
 ```
 
-### `default` в `switch`
+### `default` in `switch`
 
-- Срабатывает, если нет совпадений с `case`
-- Аналог `else` в `if else`
+- Executes if no `case` matches
+- Similar to `else` in `if-else`
 
 ```java
 switch (value) {
     case 1:
-        System.out.println("Один");
+        System.out.println("One");
         break;
     case 2:
-        System.out.println("Два");
+        System.out.println("Two");
         break;
     default:
-        System.out.println("Неизвестное значение");
+        System.out.println("Unknown value");
 }
 ```
 
-### Сравнительная таблица с if-else
+### Comparison Table: `switch` vs `if-else`
 
-| Характеристика | switch | if-else |
-|----------------|---------|----------|
-| Читаемость | Выше при множестве вариантов | Лучше для 2-3 условий |
-| Производительность | Выше (jump table) | Ниже (последовательные проверки) |
-| Гибкость условий | Только равенство | Любые условия |
-| Типы данных | Ограниченный набор | Любые boolean выражения |
+| Feature           | `switch`               | `if-else`            |
+|--------------------|------------------------|----------------------|
+| Readability        | Better for many cases | Better for 2-3 conditions |
+| Performance        | Higher (jump table)   | Lower (sequential checks) |
+| Condition Flexibility | Equality only       | Any boolean expression |
+| Supported Data Types | Limited              | Any boolean expression |
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [SwitchStatement.java](./lesson13/SwitchStatement.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 14: Классический цикл `for`. Выражения `break` и `continue`
+## Lesson 14: The Classic `for` Loop. `break` and `continue` Statements
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Структура цикла `for`
-- Вложенные циклы
-- Операторы `break` и `continue`
-- Маркированные циклы (labeled loops)
-- Ошибки `unreachable statement`
+- Structure of the `for` loop
+- Nested loops
+- `break` and `continue` statements
+- Labeled loops
+- `unreachable statement` errors
 
-### Основной синтаксис `for`
+### Basic Syntax of `for`
 
-Цикл `for` используется, когда известно количество повторений.
+The `for` loop is used when the number of iterations is known.
 
 ```java
-for (инициализация; условие; обновление) {
-    // тело цикла
+for (initialization; condition; update) {
+    // loop body
 }
 ```
 
-Пример вывода сообщения 10 раз:
+Example: Print a message 10 times:
 
 ```java
 for (int i = 0; i < 10; i++) {
-    System.out.println("Lesson №14");
+    System.out.println("Lesson #14");
 }
 ```
 
-Объяснение:
+Explanation:
 
-- `int i = 0;` – объявляем счетчик
-- `i < 10;` – условие выполнения
-- `i++` – увеличиваем `i` после каждого шага
+- `int i = 0;` – initialize the counter
+- `i < 10;` – loop condition
+- `i++` – increment `i` after each iteration
 
-### Вложенные циклы
+### Nested Loops
 
-Пример вывода часов и минут:
+Example: Print hours and minutes:
 
 ```java
 for (int hour = 0; hour < 24; hour++) {
@@ -1276,20 +1276,20 @@ for (int hour = 0; hour < 24; hour++) {
 }
 ```
 
-### `break` и `continue`
+### `break` and `continue`
 
-- `break` - прерывает выполнение цикла
-- `continue` - пропускает текущую итерацию
+- `break` - exits the loop
+- `continue` - skips the current iteration
 
 ```java
 for (int i = 1; i <= 10; i++) {
-    if (i == 5) continue; // Пропускаем 5
-    if (i == 7) break;    // Прерываем на 7
+    if (i == 5) continue; // Skip 5
+    if (i == 7) break;    // Exit at 7
     System.out.println(i);
 }
 ```
 
-Вывод:
+Output:
 
 ```bash
 1  
@@ -1299,47 +1299,47 @@ for (int i = 1; i <= 10; i++) {
 6  
 ```
 
-### Маркированные циклы (labeled loops)
+### Labeled Loops
 
-Позволяют управлять конкретным циклом во вложенных конструкциях.
+Labeled loops allow control over specific loops in nested structures.
 
 ```java
 OUTER:
 for (int hour = 0; hour < 24; hour++) {
     for (int minute = 0; minute < 60; minute++) {
-        if (minute == 20) continue OUTER; // Перейти к следующему часу
-        if (minute == 30) break OUTER;    // Выйти из внешнего цикла
+        if (minute == 20) continue OUTER; // Skip to the next hour
+        if (minute == 30) break OUTER;    // Exit the outer loop
         System.out.println(hour + ":" + minute);
     }
 }
 ```
 
-### `Unreachable statement`
+### `Unreachable Statement`
 
-Ошибка компиляции возникает, если код никогда не выполнится.
+A compilation error occurs if code is never executed.
 
 ```java
-// Ошибка: условие всегда false
+// Error: condition is always false
 for (int i = 0; false; i++) { 
     System.out.println(i);
 }
 
-// Никогда не выполнится
+// Will never execute
 if (10 < 3) { 
-    System.out.println("Невыполнимый код");
+    System.out.println("Unreachable code");
 }
 ```
 
-### Сравнительная таблица операторов управления циклом
+### Comparison Table of Loop Control Statements
 
-| Оператор | Действие | Применение |
-|----------|----------|------------|
-| `break` | Прерывает цикл | Выход из цикла досрочно |
-| `continue` | Пропускает итерацию | Пропуск определённых значений |
-| `break LABEL` | Прерывает помеченный цикл | Выход из вложенных циклов |
-| `continue LABEL` | Переход к следующей итерации помеченного цикла | Управление вложенными циклами |
+| Statement       | Action                  | Use Case                     |
+|------------------|-------------------------|------------------------------|
+| `break`         | Exits the loop          | Exit the loop prematurely    |
+| `continue`      | Skips the current iteration | Skip specific values         |
+| `break LABEL`   | Exits the labeled loop  | Exit nested loops            |
+| `continue LABEL`| Skips to the next iteration of the labeled loop | Control nested loops |
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [ClassicalCycleFor.java](./lesson14/ClassicalCycleFor.java)
 - [ClassicalCycleForNestedLoop.java](./lesson14/ClassicalCycleForNestedLoop.java)
@@ -1347,23 +1347,23 @@ if (10 < 3) {
 - [StatementBreakAndContinue.java](./lesson14/StatementBreakAndContinue.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 15: Циклы `while` и `do while`
+## Lesson 15: `while` and `do while` Loops
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Цикл `while`
-- Цикл `do while`
-- Использование `break` и `continue`
-- Метки для циклов (labeled loops)
+- The `while` loop
+- The `do while` loop
+- Using `break` and `continue`
+- Labeled loops
 
-### Цикл while
+### `while` Loop
 
-Используется, когда количество итераций заранее неизвестно, но есть условие.
+Used when the number of iterations is unknown but there is a condition.
 
 ```java
 public class CycleWhileAndDoWhile {
@@ -1377,16 +1377,16 @@ public class CycleWhileAndDoWhile {
 }
 ```
 
-Работа кода:
+How it works:
 
-1. Проверяется условие `i <= 10`
-2. Если `true` → выполняется тело цикла
-3. `i++` увеличивает счетчик
-4. Повторяется, пока `i` не станет 11
+1. The condition `i <= 10` is checked.
+2. If `true`, the loop body is executed.
+3. `i++` increments the counter.
+4. Repeats until `i` becomes 11.
 
-### Цикл do while
+### `do while` Loop
 
-Гарантирует хотя бы одну итерацию, даже если условие изначально `false`.
+Ensures at least one iteration, even if the condition is initially `false`.
 
 ```java
 public class DoWhileExample {
@@ -1400,12 +1400,12 @@ public class DoWhileExample {
 }
 ```
 
-Отличия от `while`:
+Differences from `while`:
 
-- `while` → проверка **до** выполнения кода
-- `do while` → проверка **после** выполнения кода
+- `while` → checks **before** executing the code.
+- `do while` → checks **after** executing the code.
 
-### Прерывание циклов: break и continue
+### Breaking Loops: `break` and `continue`
 
 ```java
 public class BreakContinueExample {
@@ -1414,7 +1414,7 @@ public class BreakContinueExample {
         while (true) { 
             System.out.println(a);
             if (a % 3 == 0 && a % 7 == 0) {
-                break; // Прерывание цикла
+                break; // Exits the loop
             }
             a++;
         }
@@ -1422,7 +1422,7 @@ public class BreakContinueExample {
 }
 ```
 
-### Использование меток (labeled loops)
+### Using Labeled Loops
 
 ```java
 public class LabeledLoopExample {
@@ -1433,7 +1433,7 @@ public class LabeledLoopExample {
             INNER:
             while (min < 60) {
                 if (min == 20) {
-                    continue OUTER; // Переход к внешнему циклу
+                    continue OUTER; // Skips to the next iteration of the outer loop
                 }
                 System.out.println(min);
                 min++;
@@ -1443,230 +1443,222 @@ public class LabeledLoopExample {
 }
 ```
 
-### Сравнение while и do while
+### Comparison of `while` and `do while`
 
-| Характеристика | while | do while |
-|----------------|-------|-----------|
-| Проверка условия | В начале | В конце |
-| Минимум итераций | 0 | 1 |
-| Применение | Неизвестное количество повторений | Нужна минимум одна итерация |
+| Characteristic      | `while`         | `do while`      |
+|---------------------|-----------------|-----------------|
+| Condition Check     | At the start    | At the end      |
+| Minimum Iterations  | 0               | 1               |
+| Use Case            | Unknown repetitions | At least one iteration |
 
-### Особенности работы с циклами
+### Key Features of Loops
 
-1. `break` - полностью прерывает цикл
-2. `continue` - пропускает текущую итерацию
-3. Метки позволяют управлять вложенными циклами
-4. Бесконечный цикл создаётся через `while(true)`
+1. `break` - completely exits the loop.
+2. `continue` - skips the current iteration.
+3. Labels allow control over nested loops.
+4. Infinite loops are created using `while(true)`.
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [CycleWhileAndDoWhile.java](./lesson15/CycleWhileAndDoWhile.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 16: Всё о классе `String`
+## Lesson 16: All About the `String` Class
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Создание строк и их различия в памяти
-- Сравнение строк
-- Методы работы со строками
-- String Pool и размещение строк в памяти
+- Creating strings and memory differences
+- Comparing strings
+- String manipulation methods
+- String Pool and memory allocation
 
-### Создание строк
+### Creating Strings
 
-Строки в Java могут быть созданы двумя способами:
+Strings in Java can be created in two ways:
 
 ```java
-// Через литералы (String Pool)
-String str4 = "Good morning";  // Размещается в String Pool
-String str5 = "Good morning";  // Ссылается на тот же объект
+// Using literals (String Pool)
+String str4 = "Good morning";  // Stored in the String Pool
+String str5 = "Good morning";  // Refers to the same object
 
-// Через конструктор (Heap)
-String str1 = new String("Good morning");  // Создает новый объект
-String str2 = new String("Bad day");       // Создает новый объект
+// Using the constructor (Heap)
+String str1 = new String("Good morning");  // Creates a new object
+String str2 = new String("Bad day");       // Creates a new object
 ```
 
-### Сравнение строк
+### Comparing Strings
 
 ```java
-// Сравнение ссылок (не рекомендуется для значений)
+// Comparing references (not recommended for values)
 System.out.println(str1 == str2);        // false
-System.out.println(str4 == str5);        // true (один объект в пуле)
+System.out.println(str4 == str5);        // true (same object in the pool)
 
-// Правильное сравнение значений
+// Correct value comparison
 System.out.println(str1.equals(str2));   // false
 System.out.println(str4.equals(str5));   // true
 ```
 
-### Основные методы String
+### Key String Methods
 
 ```java
-// Доступ к символам
+// Accessing characters
 char first = str1.charAt(0);         // 'G'
 char fifth = str1.charAt(5);         // 'm'
 
-// Длина строки
+// String length
 int length = str1.length();          // 12
 
-// Преобразование регистра
+// Case conversion
 String upper = str1.toUpperCase();   // "GOOD MORNING"
 String lower = str1.toLowerCase();   // "good morning"
 
-// Поиск
+// Searching
 int index = str1.indexOf('m');       // 5
 int lastIndex = str1.lastIndexOf('g'); // 10
 
-// Подстроки
+// Substrings
 String sub1 = str1.substring(0, 4);  // "Good"
 String sub2 = str1.substring(5);     // "morning"
 
-// Замена символов
+// Replacing characters
 String replaced = str1.replace(' ', '-');  // "Good-morning"
 
-// Удаление пробелов
+// Trimming spaces
 String trimmed = "  Hello  ".trim();  // "Hello"
 
-// Проверка содержимого
+// Checking content
 boolean starts = str1.startsWith("Good");  // true
 boolean ends = str1.endsWith("ing");       // true
 boolean contains = str1.contains("mor");   // true
 ```
 
-### Сравнительная таблица методов String
+### Comparison Table of String Methods
 
-| Метод | Описание | Пример |
-|-------|----------|--------|
-| `charAt()` | Получение символа по индексу | `str.charAt(0)` |
-| `length()` | Длина строки | `str.length()` |
-| `substring()` | Получение подстроки | `str.substring(0, 4)` |
-| `toLowerCase()` | Преобразование в нижний регистр | `str.toLowerCase()` |
-| `toUpperCase()` | Преобразование в верхний регистр | `str.toUpperCase()` |
-| `trim()` | Удаление крайних пробелов | `str.trim()` |
-| `replace()` | Замена символов/подстрок | `str.replace('a', 'b')` |
-| `contains()` | Проверка наличия подстроки | `str.contains("abc")` |
+| Method          | Description                  | Example                  |
+|------------------|------------------------------|--------------------------|
+| `charAt()`       | Get character by index       | `str.charAt(0)`          |
+| `length()`       | Get string length            | `str.length()`           |
+| `substring()`    | Extract substring            | `str.substring(0, 4)`    |
+| `toLowerCase()`  | Convert to lowercase         | `str.toLowerCase()`      |
+| `toUpperCase()`  | Convert to uppercase         | `str.toUpperCase()`      |
+| `trim()`         | Remove leading/trailing spaces | `str.trim()`           |
+| `replace()`      | Replace characters/substrings | `str.replace('a', 'b')` |
+| `contains()`     | Check for substring presence | `str.contains("abc")`   |
 
-### Особенности String в Java
+### String Features in Java
 
-1. Строки неизменяемы (immutable)
-2. При создании через литералы используется String Pool
-3. Конкатенация создает новый объект
-4. Сравнение через equals() вместо ==
-5. Индексация начинается с 0
+1. Strings are immutable.
+2. Literals use the String Pool for memory efficiency.
+3. Concatenation creates a new object.
+4. Use `equals()` for value comparison instead of `==`.
+5. Indexing starts at 0.
 
-### Оптимизация работы со строками
+### Optimizing String Operations
 
 ```java
-// Неэффективно
+// Inefficient
 String result = "";
 for (int i = 0; i < 100; i++) {
-    result += i;  // Создает новый объект каждый раз
+    result += i;  // Creates a new object each time
 }
 
-// Эффективно
+// Efficient
 StringBuilder sb = new StringBuilder();
 for (int i = 0; i < 100; i++) {
-    sb.append(i);  // Изменяет существующий объект
+    sb.append(i);  // Modifies the existing object
 }
 String result = sb.toString();
 ```
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [AllAboutClassString.java](./lesson16/AllAboutClassString.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 17: Всё о классе `StringBuilder`
+## Lesson 17: All About the `StringBuilder` Class
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Создание объектов StringBuilder
-- Основные методы класса
-- Сравнение производительности со String
-- Работа с буфером символов
+- Creating `StringBuilder` objects
+- Key methods of the class
+- Performance comparison with `String`
+- Working with the character buffer
 
-### Создание объектов StringBuilder
-
-```java
-// Различные способы создания
-StringBuilder sb = new StringBuilder();           // Пустой (ёмкость 16)
-StringBuilder sb1 = new StringBuilder("Hello");   // С начальной строкой
-StringBuilder sb2 = new StringBuilder(50);        // С начальной ёмкостью
-StringBuilder sb3 = new StringBuilder(sb1);       // Копия другого StringBuilder
-```
-
-### Основные методы
-
-#### Информация о StringBuilder
+### Creating `StringBuilder` Objects
 
 ```java
-// Длина и ёмкость
-int length = sb.length();          // Текущая длина
-int capacity = sb.capacity();      // Текущая ёмкость
-boolean isEmpty = sb.isEmpty();    // Проверка на пустоту
+// Different ways to create a StringBuilder
+StringBuilder sb = new StringBuilder();           // Empty (capacity 16)
+StringBuilder sb1 = new StringBuilder("Hello");   // With initial string
+StringBuilder sb2 = new StringBuilder(50);        // With initial capacity
+StringBuilder sb3 = new StringBuilder(sb1);       // Copy of another StringBuilder
 ```
 
-#### Модификация содержимого
+### Key Methods
+
+#### Information About `StringBuilder`
 
 ```java
-// Добавление контента
-sb.append("Hello");               // В конец
-sb.insert(0, "Start ");          // По индексу
-sb.append(22).append(true);      // Цепочка вызовов
-
-// Удаление контента
-sb.delete(1, 3);                 // Диапазон
-sb.deleteCharAt(0);              // Один символ
-
-// Замена и разворот
-sb.replace(0, 5, "Hi");          // Замена части
-sb.reverse();                    // Разворот строки
+// Length and capacity
+int length = sb.length();          // Current length
+int capacity = sb.capacity();      // Current capacity
+boolean isEmpty = sb.isEmpty();    // Check if empty
 ```
 
-#### Получение информации
+#### Modifying Content
 
 ```java
-// Доступ к символам
-char ch = sb.charAt(0);          // Получение символа
-int idx = sb.indexOf("Hello");   // Поиск подстроки
-String sub = sb.substring(0, 5); // Получение подстроки
+// Adding content
+sb.append("Hello");               // Append to the end
+sb.insert(0, "Start ");           // Insert at index
+sb.append(22).append(true);       // Chained calls
+
+// Removing content
+sb.delete(1, 3);                  // Remove range
+sb.deleteCharAt(0);               // Remove single character
+
+// Replacing and reversing
+sb.replace(0, 5, "Hi");           // Replace part of the string
+sb.reverse();                     // Reverse the string
 ```
 
-### Сравнительная таблица String vs StringBuilder
-
-| Характеристика | String | StringBuilder |
-|----------------|--------|---------------|
-| Изменяемость | Неизменяемый | Изменяемый |
-| Thread-safety | Да | Нет |
-| Производительность при конкатенации | Ниже | Выше |
-| Использование памяти | Больше | Меньше |
-| Синхронизация | Не требуется | Нет |
-
-### Особенности работы
+#### Retrieving Information
 
 ```java
-StringBuilder sb = new StringBuilder("Hello");
-String s = sb.append(" World").substring(sb.indexOf("W"));
-System.out.println(s);           // "World"
+// Accessing characters
+char ch = sb.charAt(0);           // Get character at index
+int idx = sb.indexOf("Hello");    // Find substring
+String sub = sb.substring(0, 5);  // Get substring
 ```
 
-### Основные сценарии использования
+### Comparison Table: `String` vs `StringBuilder`
 
-1. Множественные изменения строки
-2. Построение строки в цикле
-3. Конкатенация большого количества строк
-4. Создание строки по шаблону
+| Feature            | `String`         | `StringBuilder` |
+|---------------------|------------------|-----------------|
+| Mutability         | Immutable        | Mutable         |
+| Thread-safety      | Yes              | No              |
+| Concatenation Performance | Lower         | Higher          |
+| Memory Usage       | Higher           | Lower           |
+| Synchronization    | Not required     | None            |
 
-### Пример эффективного использования
+### Key Usage Scenarios
+
+1. Frequent string modifications
+2. Building strings in loops
+3. Concatenating a large number of strings
+4. Creating strings based on templates
+
+### Example of Efficient Usage
 
 ```java
 StringBuilder result = new StringBuilder();
@@ -1679,28 +1671,28 @@ for (int i = 0; i < 1000; i++) {
 String finalString = result.toString();
 ```
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [AllAboutClassStringBuilder.java](./lesson17/AllAboutClassStringBuilder.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 18: Понятие массив. Работа с массивами
+## Lesson 18: Arrays and Working with Arrays
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Основы работы с массивами
-- Динамическая инициализация
-- Статическая инициализация
-- Методы класса Arrays
+- Basics of working with arrays
+- Dynamic initialization
+- Static initialization
+- Methods of the `Arrays` class
 
-### Динамическая инициализация массива
+### Dynamic Array Initialization
 
-Размер массива задается во время выполнения программы.
+The size of the array is defined at runtime.
 
 ```java
 public class ArrayDynamicInitialization {
@@ -1708,22 +1700,22 @@ public class ArrayDynamicInitialization {
         String[] array1;
         int[][] array2;
         
-        // Инициализация массивов
+        // Initializing arrays
         array1 = new String[3];
         array2 = new int[3][];
         
-        // Заполнение одномерного массива
+        // Filling a one-dimensional array
         for (int i = 0; i < array1.length; i++) {
             array1[i] = "Hello " + i;
             System.out.println(array1[i]);
         }
         
-        // Инициализация двумерного массива
+        // Initializing a two-dimensional array
         array2[0] = new int[5];
         array2[1] = new int[2];
         array2[2] = new int[7];
         
-        // Заполнение двумерного массива
+        // Filling a two-dimensional array
         for (int i = 0; i < array2.length; i++) {
             for (int j = 0; j < array2[i].length; j++) {
                 array2[i][j] = i + j;
@@ -1735,98 +1727,98 @@ public class ArrayDynamicInitialization {
 }
 ```
 
-### Статическая инициализация массива
+### Static Array Initialization
 
-Размер и значения массива определяются при объявлении.
+The size and values of the array are defined at declaration.
 
 ```java
 public class ArrayStaticInitialization {
     public static void main(String[] args) {
-        // Объявление и инициализация
+        // Declaration and initialization
         int[] array1 = {1, 2, 3, 4, 5};
         String[] array2 = {"Hello", "World"};
         
-        // Многомерные массивы
+        // Multidimensional arrays
         int[][] array3 = {
             {1, 2},
             {3, 4, 5},
             {6}
         };
         
-        // Ссылки на массивы
+        // Array references
         double[] array5 = {2.5, 3.5};
-        double[] array7 = array5;  // Копирование ссылки
+        double[] array7 = array5;  // Copying reference
     }
 }
 ```
 
-### Работа с классом Arrays
+### Working with the `Arrays` Class
 
-Класс `Arrays` предоставляет утилитарные методы для работы с массивами.
+The `Arrays` class provides utility methods for working with arrays.
 
 ```java
 public class ConsiderationOfTheArraysClassIsMinimal {
     public static void main(String[] args) {
         int array1[] = {1, 9, 3, -8, 0, 5, 4, 1};
         
-        // Сортировка массива
+        // Sorting the array
         Arrays.sort(array1);
         
-        // Бинарный поиск
+        // Binary search
         int index = Arrays.binarySearch(array1, -8);
         
-        // Вывод массива
+        // Printing the array
         System.out.println(Arrays.toString(array1));
     }
 }
 ```
 
-### Сравнительная таблица методов Arrays
+### Comparison Table of `Arrays` Methods
 
-| Метод | Описание | Пример |
-|-------|----------|--------|
-| `sort()` | Сортировка массива | `Arrays.sort(array)` |
-| `binarySearch()` | Поиск элемента | `Arrays.binarySearch(array, key)` |
-| `equals()` | Сравнение массивов | `Arrays.equals(array1, array2)` |
-| `fill()` | Заполнение значением | `Arrays.fill(array, value)` |
-| `toString()` | Строковое представление | `Arrays.toString(array)` |
+| Method            | Description               | Example                  |
+|--------------------|---------------------------|--------------------------|
+| `sort()`          | Sorts the array           | `Arrays.sort(array)`     |
+| `binarySearch()`  | Searches for an element   | `Arrays.binarySearch(array, key)` |
+| `equals()`        | Compares two arrays       | `Arrays.equals(array1, array2)` |
+| `fill()`          | Fills the array with a value | `Arrays.fill(array, value)` |
+| `toString()`      | Converts array to string  | `Arrays.toString(array)` |
 
-### Особенности работы с массивами
+### Key Features of Arrays
 
-1. Индексация начинается с 0
-2. Длина массива фиксирована после создания
-3. Массивы являются объектами
-4. Элементы примитивных типов инициализируются нулевыми значениями
-5. При выходе за границы возникает `ArrayIndexOutOfBoundsException`
+1. Indexing starts at 0
+2. Array length is fixed after creation
+3. Arrays are objects
+4. Primitive type elements are initialized to default values
+5. Accessing out-of-bounds indices throws `ArrayIndexOutOfBoundsException`
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [ArrayDynamicInitialization.java](./lesson18/ArrayDynamicInitialization.java)
 - [ArrayStaticInitialization.java](./lesson18/ArrayStaticInitialization.java)
 - [ConsiderationOfTheArraysClassIsMinimal.java](./lesson18/ConsiderationOfTheArraysClassIsMinimal.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 19: Параметры метода типа `varargs`. Аргументы типа `command line`. Цикл `foreach`
+## Lesson 19: Method Parameters of Type `varargs`, Command Line Arguments, and `foreach` Loop
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Параметры переменной длины (varargs)
-- Работа с аргументами командной строки
-- Использование цикла foreach
-- Компиляция и запуск Java программ
+- Variable-length parameters (`varargs`)
+- Working with command line arguments
+- Using the `foreach` loop
+- Compiling and running Java programs
 
-### Параметры типа varargs
+### Variable-Length Parameters (`varargs`)
 
-Varargs позволяют передавать переменное количество аргументов в метод. Они должны быть последним параметром.
+`varargs` allows passing a variable number of arguments to a method. It must be the last parameter in the method signature.
 
 ```java
 public class VariableArgumentsVarArgs {
-    // Перегруженные методы
+    // Overloaded methods
     static void sum(int a, int b) {
         System.out.println("Sum of two numbers: " + (a + b));
     }
@@ -1835,7 +1827,7 @@ public class VariableArgumentsVarArgs {
         System.out.println("Sum of three numbers: " + (a + b + c));
     }
 
-    // Метод с varargs
+    // Method with varargs
     static void sum(int... numbers) {
         int sum = 0;
         for (int number : numbers) {
@@ -1846,29 +1838,29 @@ public class VariableArgumentsVarArgs {
 }
 ```
 
-### Аргументы командной строки
+### Command Line Arguments
 
-Параметры программы передаются через массив `String[] args` в методе main.
+Program parameters are passed through the `String[] args` array in the `main` method.
 
 ```java
 public class CommandLineArguments {
     public static void main(String[] args) {
-        // Вывод первого аргумента
+        // Print the first argument
         System.out.println("First argument: " + args[0]);
-        // Вывод количества аргументов
+        // Print the number of arguments
         System.out.println("Number of arguments: " + args.length);
     }
 }
 ```
 
-### Цикл foreach
+### `foreach` Loop
 
-Упрощенный способ перебора элементов массива или коллекции.
+A simplified way to iterate over elements of an array or collection.
 
 ```java
 public void abc(int[]... arrays) {
-    for (int[] array : arrays) {        // Внешний foreach
-        for (int number : array) {       // Внутренний foreach
+    for (int[] array : arrays) {        // Outer foreach
+        for (int number : array) {      // Inner foreach
             System.out.print(number + " ");
         }
         System.out.println();
@@ -1876,32 +1868,32 @@ public void abc(int[]... arrays) {
 }
 ```
 
-### Компиляция и запуск Java программ
+### Compiling and Running Java Programs
 
-| Команда | Описание |
-|---------|-----------|
-| `javac ClassName.java` | Компиляция исходного кода |
-| `java ClassName` | Запуск программы |
-| `java ClassName arg1 arg2` | Запуск с аргументами |
+| Command | Description |
+|---------|-------------|
+| `javac ClassName.java` | Compiles the source code |
+| `java ClassName` | Runs the program |
+| `java ClassName arg1 arg2` | Runs the program with arguments |
 
-### Особенности varargs
+### Features of `varargs`
 
-| Характеристика | Описание | Пример |
-|----------------|-----------|---------|
-| Позиция | Только последний параметр | `void method(String s, int... nums)` |
-| Тип | Создается массив | `int... nums` становится `int[] nums` |
-| Количество | От 0 до множества | `sum()` или `sum(1,2,3,4,5)` |
+| Feature       | Description                     | Example                          |
+|---------------|---------------------------------|----------------------------------|
+| Position      | Must be the last parameter      | `void method(String s, int... nums)` |
+| Type          | Treated as an array            | `int... nums` becomes `int[] nums` |
+| Count         | From 0 to many arguments       | `sum()` or `sum(1,2,3,4,5)`     |
 
-### Примеры использования foreach
+### Examples of Using `foreach`
 
 ```java
-// С массивом
+// With a single-dimensional array
 int[] numbers = {1, 2, 3, 4, 5};
 for (int num : numbers) {
     System.out.print(num + " ");
 }
 
-// С двумерным массивом
+// With a two-dimensional array
 int[][] matrix = {{1,2}, {3,4}, {5,6}};
 for (int[] row : matrix) {
     for (int num : row) {
@@ -1910,86 +1902,86 @@ for (int[] row : matrix) {
 }
 ```
 
-### Примеры запуска с аргументами
+### Examples of Running with Arguments
 
 ```bash
-# Компиляция
+# Compile
 javac CommandLineArguments.java
 
-# Запуск с аргументами
-java CommandLineArguments 25 67 privet poka
+# Run with arguments
+java CommandLineArguments 25 67 hello goodbye
 ```
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [CommandLineArguments.java](./lesson19/CommandLineArguments.java)
 - [VariableArgumentsVarArgs.java](./lesson19/VariableArgumentsVarArgs.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 20: Всё о классе `ArrayList`
+## Lesson 20: All About the `ArrayList` Class
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Основы работы с `ArrayList`
-- Методы для манипуляции данными
-- Работа с итераторами
-- Сравнение с обычными массивами
+- Basics of working with `ArrayList`
+- Methods for data manipulation
+- Working with iterators
+- Comparison with regular arrays
 
-### Создание ArrayList
+### Creating an ArrayList
 
-`ArrayList` - динамическая структура данных, автоматически расширяющаяся при добавлении элементов.
+`ArrayList` is a dynamic data structure that automatically expands as elements are added.
 
 ```java
-// Различные способы создания
-ArrayList<String> list1 = new ArrayList<>();           // Пустой список
-ArrayList<String> list2 = new ArrayList<>(50);         // С начальной ёмкостью
-ArrayList<String> list3 = new ArrayList<>(otherList);  // Копия существующего списка
+// Different ways to create an ArrayList
+ArrayList<String> list1 = new ArrayList<>();           // Empty list
+ArrayList<String> list2 = new ArrayList<>(50);         // With initial capacity
+ArrayList<String> list3 = new ArrayList<>(otherList);  // Copy of an existing list
 ```
 
-### Основные методы `ArrayList`
+### Key Methods of `ArrayList`
 
-#### Добавление элементов
+#### Adding Elements
 
 ```java
 ArrayList<String> list = new ArrayList<>();
-list.add("Java");                 // В конец списка
-list.add(1, "Python");           // По индексу
-list.addAll(anotherList);        // Добавление коллекции
-list.addAll(1, anotherList);     // Добавление по индексу
+list.add("Java");                 // Add to the end of the list
+list.add(1, "Python");            // Add at a specific index
+list.addAll(anotherList);         // Add a collection
+list.addAll(1, anotherList);      // Add a collection at a specific index
 ```
 
-#### Получение и изменение элементов
+#### Accessing and Modifying Elements
 
 ```java
-String element = list.get(0);     // Получение элемента
-list.set(1, "C++");              // Замена элемента
+String element = list.get(0);     // Get an element
+list.set(1, "C++");               // Replace an element
 ```
 
-#### Удаление элементов
+#### Removing Elements
 
 ```java
-list.remove(0);                   // По индексу
-list.remove("Java");              // По значению
-list.clear();                     // Удаление всех элементов
+list.remove(0);                   // By index
+list.remove("Java");              // By value
+list.clear();                     // Remove all elements
 ```
 
-### Информационные методы
+### Informational Methods
 
 ```java
-int size = list.size();           // Размер списка
-boolean isEmpty = list.isEmpty(); // Проверка на пустоту
-boolean contains = list.contains("Java"); // Проверка наличия элемента
-int index = list.indexOf("Java"); // Поиск первого вхождения
+int size = list.size();           // Get the size of the list
+boolean isEmpty = list.isEmpty(); // Check if the list is empty
+boolean contains = list.contains("Java"); // Check if an element exists
+int index = list.indexOf("Java"); // Find the first occurrence of an element
 ```
 
-### Работа с итераторами
+### Working with Iterators
 
-#### Iterator
+#### Using `Iterator`
 
 ```java
 Iterator<String> iterator = list.iterator();
@@ -1999,7 +1991,7 @@ while (iterator.hasNext()) {
 }
 ```
 
-#### ListIterator
+#### Using `ListIterator`
 
 ```java
 ListIterator<String> listIterator = list.listIterator();
@@ -2009,38 +2001,38 @@ while (listIterator.hasNext()) {
 }
 ```
 
-### Преобразование ArrayList
+### Converting `ArrayList`
 
 ```java
-// В массив Object
+// To an Object array
 Object[] array = list.toArray();
 
-// В типизированный массив
+// To a typed array
 String[] strArray = list.toArray(new String[0]);
 
-// Из массива в List
+// From an array to a List
 String[] array = {"A", "B", "C"};
 List<String> list = Arrays.asList(array);
 ```
 
-### Сравнительная таблица Array vs ArrayList
+### Comparison Table: Array vs ArrayList
 
-| Характеристика | Array | ArrayList |
-|----------------|-------|-----------|
-| Размер | Фиксированный | Динамический |
-| Производительность | Выше | Ниже |
-| Примитивные типы | Да | Нет (только обёртки) |
-| Многомерность | Да | Нет (требуется вложенность) |
-| Обобщения (Generics) | Нет | Да |
+| Feature            | Array          | ArrayList       |
+|---------------------|----------------|-----------------|
+| Size               | Fixed          | Dynamic         |
+| Performance        | Higher         | Lower           |
+| Primitive Types    | Supported      | Not supported (only wrappers) |
+| Multidimensional   | Supported      | Not directly (requires nesting) |
+| Generics           | Not supported  | Supported       |
 
-### Особенности работы с ArrayList
+### Key Features of `ArrayList`
 
-1. Автоматическое расширение при добавлении элементов
-2. Начальная ёмкость по умолчанию - 10 элементов
-3. При заполнении создаётся новый массив с увеличенной ёмкостью
-4. Поддерживает только ссылочные типы данных
+1. Automatically expands when elements are added.
+2. Default initial capacity is 10 elements.
+3. When full, a new array with increased capacity is created.
+4. Supports only reference data types.
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [AllAboutArrayList.java](./lesson20/AllAboutArrayList.java)
 - [AllAboutMethodsArrayList.java](./lesson20/AllAboutMethodsArrayList.java)
@@ -2051,26 +2043,26 @@ List<String> list = Arrays.asList(array);
 - [IteratorAndListIterator.java](./lesson20/IteratorAndListIterator.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 21: Понятие инкапсуляция, наследование и модификатор `protected`
+## Lesson 21: Encapsulation, Inheritance, and the `protected` Modifier
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Концепция инкапсуляции
-- Наследование классов
-- Модификатор `protected`
-- Ключевое слово `super`
+- The concept of encapsulation
+- Class inheritance
+- The `protected` modifier
+- The `super` keyword
 
-### Инкапсуляция
+### Encapsulation
 
-Инкапсуляция - это механизм, который объединяет данные и методы, манипулирующие этими данными, и защищает их от внешнего вмешательства.
+Encapsulation is a mechanism that combines data and methods that manipulate that data, while protecting it from external interference.
 
 ```java
-public class IncapsulationHuman {
+public class EncapsulationHuman {
     private String name;
     private int age;
     
@@ -2079,16 +2071,16 @@ public class IncapsulationHuman {
     }
     
     public void setAge(int age) {
-        if (age >= 0 || age <= 120) {
+        if (age >= 0 && age <= 120) {
             this.age = age;
         }
     }
 }
 ```
 
-### Наследование
+### Inheritance
 
-Наследование позволяет создать новый класс на основе существующего.
+Inheritance allows creating a new class based on an existing one.
 
 ```java
 class Employee {
@@ -2100,16 +2092,16 @@ class Employee {
 }
 
 class Doctor extends Employee {
-    String speciality;
+    String specialty;
     void treat() {
         System.out.println("treating");
     }
 }
 ```
 
-### Модификатор `protected`
+### The `protected` Modifier
 
-`protected` делает члены класса доступными в пределах пакета и в подклассах.
+`protected` makes class members accessible within the package and in subclasses.
 
 ```java
 public class Human {
@@ -2122,51 +2114,51 @@ public class Human {
 }
 ```
 
-### Ключевое слово `super`
+### The `super` Keyword
 
-`super` используется для вызова конструктора или методов родительского класса.
+`super` is used to call the constructor or methods of the parent class.
 
 ```java
 class Student extends Human {
     public Student(String name) {
-        super(name); // Вызов конструктора родительского класса
+        super(name); // Call the parent class constructor
     }
 }
 ```
 
-### Иерархия наследования
+### Inheritance Hierarchy
 
-| Уровень | Класс | Наследует |
-|---------|-------|-----------|
-| 1 | `Employee` | `Object` |
-| 2 | `Doctor`, `Teacher`, `Driver` | `Employee` |
-| 3 | `Surgeon`, `Dentist` | `Doctor` |
+| Level   | Class       | Inherits From |
+|---------|-------------|---------------|
+| 1       | `Employee`  | `Object`      |
+| 2       | `Doctor`, `Teacher`, `Driver` | `Employee` |
+| 3       | `Surgeon`, `Dentist` | `Doctor` |
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [Inheritance.java](./lesson21/Inheritance.java)
-- [IncapsulationHuman.java](./lesson21/IncapsulationHuman.java)
+- [EncapsulationHuman.java](./lesson21/EncapsulationHuman.java)
 - [Human.java](./lesson21/Human.java)
 - [Test1.java](./lesson21/p1/Test1.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 22: Перезаписанные и скрытые методы. Runtime binding и compile time binding
+## Lesson 22: Overridden and Hidden Methods. Runtime Binding and Compile Time Binding
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Перезаписанные методы (Method Overriding)
-- Скрытые методы (Method Hiding)
-- Runtime binding (динамическое связывание)
-- Compile time binding (статическое связывание)
+- Overridden methods (Method Overriding)
+- Hidden methods (Method Hiding)
+- Runtime binding (dynamic binding)
+- Compile time binding (static binding)
 
-### Method Overriding (Перезаписанные методы)
+### Method Overriding
 
-Перезаписанные методы позволяют подклассу предоставить специфическую реализацию метода, определенного в родительском классе.
+Overriding allows a subclass to provide a specific implementation of a method defined in its parent class.
 
 ```java
 class Employee {
@@ -2185,9 +2177,9 @@ class Teacher extends Employee {
 }
 ```
 
-### Method Hiding (Скрытые методы)
+### Method Hiding
 
-Скрытие методов происходит при определении статического метода в подклассе с тем же именем, что и в родительском классе.
+Method hiding occurs when a static method in a subclass has the same name as one in its parent class.
 
 ```java
 class Animal {
@@ -2203,35 +2195,35 @@ class Mouse extends Animal {
 }
 ```
 
-### Runtime Binding (Динамическое связывание)
+### Runtime Binding (Dynamic Binding)
 
-Определение конкретного метода для вызова происходит во время выполнения программы.
+The method to be called is determined at runtime.
 
 ```java
 Employee e1 = new Teacher(); // Runtime binding
-e1.eat(); // Вызовет метод eat() класса Teacher
+e1.eat(); // Calls the eat() method of the Teacher class
 ```
 
-### Compile Time Binding (Статическое связывание)
+### Compile Time Binding (Static Binding)
 
-Определение метода происходит во время компиляции.
+The method to be called is determined at compile time.
 
 ```java
 void abc(Animal a) { System.out.println("a"); }
 void abc(Mouse m) { System.out.println("m"); }
 
 Animal a = new Mouse();
-abc(a); // Вызовет метод abc(Animal a)
+abc(a); // Calls the abc(Animal a) method
 ```
 
-### Правила переопределения методов
+### Rules for Method Overriding
 
-1. Метод в подклассе должен иметь такую же сигнатуру
-2. Возвращаемый тип может быть ковариантным
-3. Область видимости может быть расширена
-4. Исключения могут быть сужены или удалены
+1. The method in the subclass must have the same signature as in the parent class.
+2. The return type can be covariant.
+3. The access level can be widened.
+4. Exceptions can be narrowed or removed.
 
-### Использование super
+### Using `super`
 
 ```java
 class B8 extends SuperKeywordDemo {
@@ -2245,15 +2237,15 @@ class B8 extends SuperKeywordDemo {
 }
 ```
 
-### Иерархия классов для демонстрации наследования
+### Class Hierarchy for Demonstration
 
-| Базовый класс | Подклассы |
-|--------------|-----------|
+| Base Class | Subclasses       |
+|------------|------------------|
 | `Employee` | `Teacher`, `Doctor`, `Driver` |
-| `Animal` | `Mouse` |
-| `Food` | `Fruit` |
+| `Animal`   | `Mouse`          |
+| `Food`     | `Fruit`          |
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [CharacterOperations.java](./lesson22/CharacterOperations.java)
 - [EmployeeHierarchyDemo.java](./lesson22/EmployeeHierarchyDemo.java)
@@ -2265,23 +2257,23 @@ class B8 extends SuperKeywordDemo {
 - [MethodOverloadingInheritanceDemo.java](./lesson22/MethodOverloadingInheritanceDemo.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 23: Абстрактные классы, абстрактные методы и интерфейсы
+## Lesson 23: Abstract Classes, Abstract Methods, and Interfaces
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Абстрактные классы и методы
-- Интерфейсы и их реализация
-- Множественное наследование через интерфейсы
-- Default методы в интерфейсах (Java 8+)
+- Abstract classes and methods
+- Interfaces and their implementation
+- Multiple inheritance through interfaces
+- Default methods in interfaces (Java 8+)
 
-### Абстрактные классы
+### Abstract Classes
 
-Абстрактные классы содержат общую функциональность для группы связанных классов.
+Abstract classes provide shared functionality for a group of related classes.
 
 ```java
 abstract class Figure {
@@ -2300,25 +2292,25 @@ class Square extends Figure {
     
     @Override
     public void perimeter() {
-        System.out.println("Perimeter square: " + side * 4);
+        System.out.println("Perimeter of square: " + side * 4);
     }
     
     @Override
     public void square() {
-        System.out.println("Square: " + side * side);
+        System.out.println("Area of square: " + side * side);
     }
 }
 ```
 
-### Интерфейсы
+### Interfaces
 
-Интерфейсы определяют контракт, который должны реализовать классы.
+Interfaces define a contract that implementing classes must fulfill.
 
 ```java
 interface HelpAble {
     void help();
     void putOutTheFire();
-    int a = 10; // public static final по умолчанию
+    int a = 10; // public static final by default
 }
 
 class Teacher extends Employee implements HelpAble {
@@ -2334,7 +2326,7 @@ class Teacher extends Employee implements HelpAble {
 }
 ```
 
-### Множественная реализация интерфейсов
+### Multiple Interface Implementation
 
 ```java
 class Driver extends Employee implements HelpAble, SwimAble {
@@ -2355,7 +2347,7 @@ class Driver extends Employee implements HelpAble, SwimAble {
 }
 ```
 
-### Default методы в интерфейсах (Java 8+)
+### Default Methods in Interfaces (Java 8+)
 
 ```java
 interface I1 {
@@ -2371,17 +2363,17 @@ interface I1 {
 }
 ```
 
-### Основные различия
+### Key Differences
 
-| Характеристика | Абстрактный класс | Интерфейс |
-|----------------|-------------------|------------|
-| Множественное наследование | Нет | Да |
-| Поля | Любые | Только константы |
-| Конструктор | Может иметь | Не может иметь |
-| Методы по умолчанию | Любые | Только с Java 8+ |
-| Модификаторы доступа | Любые | Только public |
+| Feature                  | Abstract Class       | Interface            |
+|--------------------------|----------------------|----------------------|
+| Multiple Inheritance     | No                  | Yes                  |
+| Fields                   | Any                 | Only constants       |
+| Constructor              | Allowed             | Not allowed          |
+| Default Methods          | Any                 | Only since Java 8+   |
+| Access Modifiers          | Any                 | Only public          |
 
-### Иерархия наследования и реализации
+### Inheritance and Implementation Hierarchy
 
 ```bash
 Employee (class)
@@ -2392,7 +2384,7 @@ Teacher (implements HelpAble)
 Driver (implements HelpAble, SwimAble)
 ```
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [AbstractFigureDemo.java](./lesson23/AbstractFigureDemo.java)
 - [InterfaceImplementationDemo.java](./lesson23/InterfaceImplementationDemo.java)
@@ -2400,62 +2392,62 @@ Driver (implements HelpAble, SwimAble)
 - [InterfaceDefaultMethodDemo.java](./lesson23/InterfaceDefaultMethodDemo.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 24: Понятие полиморфизм. Операторы `instanceof` и приведение типов
+## Lesson 24: The Concept of Polymorphism. `instanceof` Operator and Type Casting
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Концепция полиморфизма
-- Восходящее и нисходящее приведение типов (Upcasting & Downcasting)
-- Оператор `instanceof`
-- Типы полиморфизма в Java
+- The concept of polymorphism
+- Upcasting and downcasting
+- The `instanceof` operator
+- Types of polymorphism in Java
 
-### Полиморфизм
+### Polymorphism
 
-Полиморфизм позволяет работать с объектами разных типов через единый интерфейс.
+Polymorphism allows working with objects of different types through a common interface.
 
 ```java
-// Восходящее приведение типов (Upcasting)
+// Upcasting
 EmployeePolymorphism employee = new TeacherPolymorphism();
 EmployeePolymorphism employee1 = new DriverPolymorphism();
 EmployeePolymorphism employee2 = new DoctorPolymorphism();
 
-// Массив разных типов сотрудников
+// Array of different employee types
 EmployeePolymorphism[] employees = {employee, employee1, employee2};
 ```
 
-### Приведение типов (Casting)
+### Type Casting
 
-#### Восходящее приведение (Upcasting)
+#### Upcasting
 
 ```java
-// Неявное приведение - автоматическое
+// Implicit casting - automatic
 EmployeePolymorphism employee = new TeacherPolymorphism();
 HelpAble2 helpAble = new DoctorPolymorphism();
 ```
 
-#### Нисходящее приведение (Downcasting)
+#### Downcasting
 
 ```java
-// Явное приведение - требует указания типа
+// Explicit casting - requires type specification
 DoctorPolymorphism doctorCasting = (DoctorPolymorphism) employee2;
 System.out.println(((DoctorPolymorphism) helpAble).speciality);
 ```
 
-### Оператор `instanceof`
+### `instanceof` Operator
 
-Проверяет, является ли объект экземпляром определенного класса.
+Checks if an object is an instance of a specific class.
 
 ```java
 System.out.println(employee instanceof TeacherPolymorphism);  // true
 System.out.println(employee instanceof DriverPolymorphism);   // false
 ```
 
-### Иерархия классов
+### Class Hierarchy
 
 ```java
 abstract class EmployeePolymorphism implements HelpAble2 {
@@ -2478,42 +2470,42 @@ class TeacherPolymorphism extends EmployeePolymorphism {
 }
 ```
 
-### Ключевые особенности полиморфизма
+### Key Features of Polymorphism
 
-| Тип полиморфизма | Пример | Время связывания |
-|------------------|--------|------------------|
-| Перегрузка методов | `void work()` vs `void work(String task)` | Compile-time |
-| Переопределение методов | Реализация `work()` в подклассах | Runtime |
-| Интерфейсный | Реализация интерфейса `HelpAble2` | Runtime |
+| Type of Polymorphism | Example                          | Binding Time |
+|-----------------------|----------------------------------|--------------|
+| Method Overloading    | `void work()` vs `void work(String task)` | Compile-time |
+| Method Overriding     | Implementation of `work()` in subclasses | Runtime      |
+| Interface-based       | Implementation of `HelpAble2` interface | Runtime      |
 
-### Правила приведения типов
+### Rules for Type Casting
 
-1. Восходящее приведение всегда безопасно
-2. Нисходящее приведение требует проверки `instanceof`
-3. Приведение между непересекающимися типами запрещено
+1. Upcasting is always safe.
+2. Downcasting requires an `instanceof` check.
+3. Casting between unrelated types is prohibited.
 
-Код урока доступен в файле:
+The lesson code is available in the file:
 
 - [PolymorphismCastingDemo.java](./lesson24/PolymorphismCastingDemo.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 25: Методы `equals()` и `toString()`. Wrapper classes. Перегрузка методов и порядок инициализации
+## Lesson 25: Methods `equals()` and `toString()`. Wrapper Classes. Method Overloading and Initialization Order
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Методы `equals()` и `toString()`
-- Классы-обёртки (Wrapper classes)
-- Приоритеты перегрузки методов
-- Порядок инициализации классов
+- The `equals()` and `toString()` methods
+- Wrapper classes
+- Method overloading priorities
+- Class initialization order
 
-### Методы `equals()` и `toString()`
+### `equals()` and `toString()` Methods
 
-Переопределение методов для корректного сравнения объектов и их строкового представления.
+Overriding these methods for proper object comparison and string representation.
 
 ```java
 class CarMethodsEqualAndToString {
@@ -2536,9 +2528,9 @@ class CarMethodsEqualAndToString {
 }
 ```
 
-### Wrapper Classes (Классы-обёртки)
+### Wrapper Classes
 
-Классы-обёртки для примитивных типов и их использование:
+Wrapper classes for primitive types and their usage:
 
 ```java
 // Autoboxing & Unboxing
@@ -2556,13 +2548,13 @@ Integer i3 = Integer.valueOf(10);
 Double d1 = Double.valueOf("5.5");
 ```
 
-### Приоритеты перегрузки методов
+### Method Overloading Priorities
 
-Порядок выбора перегруженных методов:
+Order of method selection:
 
-1. Точное соответствие
-2. Расширение примитивных типов
-3. Автоупаковка (autoboxing)
+1. Exact match
+2. Primitive widening
+3. Autoboxing
 4. Varargs
 
 ```java
@@ -2571,14 +2563,14 @@ void abc(long i) { System.out.println("long"); }
 void abc(Integer i) { System.out.println("Integer"); }
 void abc(int... i) { System.out.println("varargs"); }
 
-// При вызове abc(5) будет выбран метод с int
+// Calling abc(5) will select the method with int
 ```
 
-### Порядок инициализации
+### Initialization Order
 
-1. Статические блоки и поля (в порядке объявления)
-2. Нестатические блоки и поля (в порядке объявления)
-3. Конструктор
+1. Static blocks and fields (in declaration order)
+2. Instance blocks and fields (in declaration order)
+3. Constructor
 
 ```java
 public class InitializationOrderDemo {
@@ -2592,15 +2584,15 @@ public class InitializationOrderDemo {
 }
 ```
 
-### Сравнительная таблица методов классов-оберток
+### Comparison Table of Wrapper Class Methods
 
-| Метод | Описание | Пример |
-|-------|----------|--------|
-| `parseInt()` | Преобразование строки в примитив | `Integer.parseInt("123")` |
-| `valueOf()` | Создание объекта wrapper class | `Integer.valueOf("123")` |
-| `toString()` | Преобразование в строку | `myInteger.toString()` |
+| Method         | Description                     | Example                     |
+|----------------|---------------------------------|-----------------------------|
+| `parseInt()`   | Converts string to primitive    | `Integer.parseInt("123")`   |
+| `valueOf()`    | Creates a wrapper class object  | `Integer.valueOf("123")`    |
+| `toString()`   | Converts to string              | `myInteger.toString()`      |
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [EqualsAndToStringDemo.java](./lesson25/EqualsAndToStringDemo.java)
 - [WrapperClassDemo.java](./lesson25/WrapperClassDemo.java)
@@ -2609,22 +2601,22 @@ public class InitializationOrderDemo {
 - [InitializationOrderDemo.java](./lesson25/InitializationOrderDemo.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 26: Исключения и их обработка. Try-catch blocks
+## Lesson 26: Exceptions and Their Handling. Try-catch Blocks
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Основы исключений в Java
-- Try-catch-finally блоки
-- Иерархия исключений
-- Пользовательские исключения
-- Проброс исключений (throws)
+- Basics of exceptions in Java
+- Try-catch-finally blocks
+- Exception hierarchy
+- Custom exceptions
+- Exception propagation (`throws`)
 
-### Базовые исключения
+### Basic Exceptions
 
 ```java
 public class ExceptionBasicDemo {
@@ -2638,7 +2630,7 @@ public class ExceptionBasicDemo {
 }
 ```
 
-### Try-catch-finally блоки
+### Try-catch-finally Blocks
 
 ```java
 public class TryFinallyExceptionDemo {
@@ -2647,19 +2639,19 @@ public class TryFinallyExceptionDemo {
         
         try {
             FileInputStream fis = new FileInputStream(f);
-            System.out.println("Everybody good day");
+            System.out.println("Hello, everyone!");
         } 
         catch (FileNotFoundException e) {
             System.out.println("Exception: " + e);
         }
         finally {
-            System.out.println("Bye everybody!");
+            System.out.println("Goodbye, everyone!");
         }
     }
 }
 ```
 
-### Пользовательские исключения
+### Custom Exceptions
 
 ```java
 class TwistYourLegException extends Exception {
@@ -2677,32 +2669,32 @@ class CrampedMuscleException extends RuntimeException {
 }
 ```
 
-### Иерархия исключений
+### Exception Hierarchy
 
-| Тип | Пример | Обработка |
-|-----|---------|-----------|
-| Checked | `FileNotFoundException` | Обязательная |
-| Unchecked | `NullPointerException` | Опциональная |
-| Error | `StackOverflowError` | Не рекомендуется |
+| Type       | Example                  | Handling Requirement |
+|------------|--------------------------|----------------------|
+| Checked    | `FileNotFoundException`  | Mandatory            |
+| Unchecked  | `NullPointerException`   | Optional             |
+| Error      | `StackOverflowError`     | Not recommended      |
 
-### Порядок catch блоков
+### Order of Catch Blocks
 
 ```java
 try {
-    // код, который может вызвать исключение
+    // Code that may throw exceptions
 }
-catch (NullPointerException e) { /* более конкретное исключение */ }
-catch (RuntimeException e) { /* более общее исключение */ }
-catch (Exception e) { /* самое общее исключение */ }
+catch (NullPointerException e) { /* More specific exception */ }
+catch (RuntimeException e) { /* Less specific exception */ }
+catch (Exception e) { /* Most general exception */ }
 ```
 
-### Особенности finally блока
+### Features of the `finally` Block
 
-- Всегда выполняется (даже при return в try/catch)
-- Используется для освобождения ресурсов
-- Может изменять возвращаемое значение (для ссылочных типов)
+- Always executes (even with `return` in try/catch)
+- Used for resource cleanup
+- Can modify the return value (for reference types)
 
-### Проброс исключений
+### Exception Propagation
 
 ```java
 void abc() throws FileNotFoundException {
@@ -2715,7 +2707,7 @@ void def() throws FileNotFoundException {
 }
 ```
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [ExceptionBasicDemo.java](./lesson26/ExceptionBasicDemo.java)
 - [FileIOExceptionDemo.java](./lesson26/FileIOExceptionDemo.java)
@@ -2738,22 +2730,22 @@ void def() throws FileNotFoundException {
 - [UnreachableCatchDemo.java](./lesson26/UnreachableCatchDemo.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 27: Классы `LocalDate`, `LocalTime`, `LocalDateTime`. Date-Time API
+## Lesson 27: Classes `LocalDate`, `LocalTime`, `LocalDateTime`. Date-Time API
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Работа с датой и временем в Java 8+ (Date-Time API)
-- Классы `LocalDate`, `LocalTime`, `LocalDateTime`
-- Форматирование дат и времени
-- Использование `Period` и `Duration`
-- Паттерн Factory Method
+- Working with date and time in Java 8+ (Date-Time API)
+- Classes `LocalDate`, `LocalTime`, `LocalDateTime`
+- Formatting dates and times
+- Using `Period` and `Duration`
+- Factory Method pattern
 
-### Работа с LocalDate, LocalTime и LocalDateTime
+### Working with LocalDate, LocalTime, and LocalDateTime
 
 ```java
 public class DateTimeManipulationDemo {
@@ -2762,12 +2754,12 @@ public class DateTimeManipulationDemo {
         LocalTime time = LocalTime.of(23, 15);
         LocalDateTime dateTime = LocalDateTime.of(date, time);
         
-        // Манипуляции с датой
+        // Manipulating dates
         date = date.plusDays(5)
                   .minusMonths(3)
                   .plusYears(1);
         
-        // Манипуляции со временем
+        // Manipulating times
         time = time.plusHours(2)
                   .minusMinutes(30)
                   .plusSeconds(15);
@@ -2775,7 +2767,7 @@ public class DateTimeManipulationDemo {
 }
 ```
 
-### Сравнение дат и времени
+### Comparing Dates and Times
 
 ```java
 LocalDate date1 = LocalDate.of(2016, 1, 20);
@@ -2786,25 +2778,25 @@ System.out.println(date1.isBefore(date2));   // false
 System.out.println(date1.equals(date2));     // false
 ```
 
-### Форматирование дат
+### Formatting Dates
 
 ```java
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd,MMMM,yyyy HH:mm");
 LocalDateTime now = LocalDateTime.now();
 String formatted = now.format(formatter);
 
-// Парсинг строки в дату
-LocalDate parseDate = LocalDate.parse("04,апреля,2019", formatter);
+// Parsing a string into a date
+LocalDate parseDate = LocalDate.parse("04,April,2019", formatter);
 ```
 
-### Period и Duration
+### Period and Duration
 
 ```java
-// Period для работы с датами
+// Period for working with dates
 Period period = Period.ofMonths(3);
 LocalDate future = LocalDate.now().plus(period);
 
-// Duration для работы со временем
+// Duration for working with times
 Duration duration = Duration.ofHours(3);
 LocalTime laterTime = LocalTime.now().plus(duration);
 ```
@@ -2820,11 +2812,11 @@ class Car {
     }
 }
 
-// Использование
+// Usage
 Car car = Car.createCar();
 ```
 
-### Планирование с использованием Period
+### Scheduling with Period
 
 ```java
 static void changeOfDutyOfficer(LocalDate start, LocalDate end, Period p) {
@@ -2836,24 +2828,24 @@ static void changeOfDutyOfficer(LocalDate start, LocalDate end, Period p) {
 }
 ```
 
-### Сравнительная таблица Period и Duration
+### Comparison Table: Period vs Duration
 
-| Характеристика | Period | Duration |
-|----------------|---------|-----------|
-| Единицы измерения | Годы, месяцы, дни | Часы, минуты, секунды, наносекунды |
-| Совместимость | LocalDate | LocalTime, LocalDateTime |
-| Точность | Календарная | Машинная |
+| Characteristic    | Period                | Duration                     |
+|-------------------|-----------------------|------------------------------|
+| Units of Measure  | Years, months, days   | Hours, minutes, seconds, nanoseconds |
+| Compatibility     | LocalDate             | LocalTime, LocalDateTime     |
+| Precision         | Calendar-based        | Machine-based                |
 
-### Форматы даты и времени
+### Date and Time Formats
 
-| Формат | Пример | Описание |
-|--------|---------|-----------|
-| ISO_LOCAL_DATE | "2024-04-14" | Стандартный формат даты |
-| SHORT | "14.04.24" | Краткий формат |
-| MEDIUM | "14 апр. 2024" | Средний формат |
-| LONG | "14 апреля 2024 г." | Полный формат |
+| Format           | Example         | Description                     |
+|-------------------|-----------------|---------------------------------|
+| ISO_LOCAL_DATE    | "2024-04-14"    | Standard date format            |
+| SHORT             | "14.04.24"      | Short format                    |
+| MEDIUM            | "14 Apr 2024"   | Medium format                   |
+| LONG              | "14 April 2024" | Full format                     |
 
-Код урока доступен в файлах:
+The lesson code is available in the files:
 
 - [DateTimeManipulationDemo.java](./lesson27/DateTimeManipulationDemo.java)
 - [DateTimeComparisonDemo.java](./lesson27/DateTimeComparisonDemo.java)
@@ -2863,21 +2855,21 @@ static void changeOfDutyOfficer(LocalDate start, LocalDate end, Period p) {
 - [FactoryMethodDemo.java](./lesson27/FactoryMethodDemo.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
 
 ---
 
-## Урок 28: Lambda выражения. Predicate интерфейс
+## Lesson 28: Lambda Expressions and the Predicate Interface
 
-В этом уроке рассматриваются:
+This lesson covers:
 
-- Функциональные интерфейсы
-- Lambda выражения
-- Интерфейс Predicate
-- Разные способы фильтрации данных
+- Functional interfaces
+- Lambda expressions
+- The `Predicate` interface
+- Various ways to filter data
 
-### Базовая фильтрация студентов
+### Basic Student Filtering
 
 ```java
 class StudentInfo {
@@ -2899,7 +2891,7 @@ class StudentInfo {
 }
 ```
 
-### Использование интерфейсов для фильтрации
+### Using Interfaces for Filtering
 
 ```java
 interface StudentsChecks {
@@ -2914,10 +2906,10 @@ class FindStudentsOverGrade implements StudentsChecks {
 }
 ```
 
-### Lambda выражения
+### Lambda Expressions
 
 ```java
-// Различные способы написания lambda выражений
+// Different ways to write lambda expressions
 info.checkStudent(students, (Student st) -> {return st.avgGrade > 8.5;});
 info.checkStudent(students, st -> st.avgGrade < 9);
 info.checkStudent(students, st -> { 
@@ -2926,7 +2918,7 @@ info.checkStudent(students, st -> {
 });
 ```
 
-### Использование Predicate
+### Using the Predicate Interface
 
 ```java
 void checkStudent(ArrayList<Student> students, Predicate<Student> sc) {
@@ -2937,11 +2929,11 @@ void checkStudent(ArrayList<Student> students, Predicate<Student> sc) {
     }
 }
 
-// Использование removeIf с Predicate
+// Using removeIf with Predicate
 students.removeIf(student -> student.name.endsWith("a"));
 ```
 
-### Параметры в Lambda выражениях
+### Parameters in Lambda Expressions
 
 ```java
 interface StringCalculator {
@@ -2952,27 +2944,27 @@ static void def(StringCalculator t) {
     System.out.println(t.abc("hello", "bye"));
 }
 
-// Использование
-def((x,y) -> x.length() + y.length());
+// Usage
+def((x, y) -> x.length() + y.length());
 ```
 
-### Сравнение подходов к фильтрации
+### Comparison of Filtering Approaches
 
-| Подход | Преимущества | Недостатки |
-|--------|--------------|------------|
-| Отдельные методы | Простота понимания | Дублирование кода |
-| Интерфейсы | Переиспользуемость | Много классов |
-| Lambda | Краткость | Сложнее отладка |
-| Predicate | Стандартный интерфейс | Ограничен одним методом |
+| Approach          | Advantages         | Disadvantages       |
+|--------------------|--------------------|---------------------|
+| Separate Methods   | Easy to understand | Code duplication    |
+| Interfaces         | Reusability        | Too many classes    |
+| Lambda             | Concise            | Harder to debug     |
+| Predicate          | Standard interface | Limited to one method |
 
-### Правила использования Lambda
+### Rules for Using Lambda Expressions
 
-1. Только для функциональных интерфейсов (один абстрактный метод)
-2. Параметры можно указывать с типом или без
-3. Для одного параметра скобки необязательны
-4. Фигурные скобки и return необязательны для одного выражения
+1. Only for functional interfaces (one abstract method).
+2. Parameters can be specified with or without types.
+3. Parentheses are optional for a single parameter.
+4. Curly braces and `return` are optional for single expressions.
 
-Код урока доступен в файлах:
+Lesson code is available in the files:
 
 - [StudentFilterDemo.java](./lesson28/StudentFilterDemo.java)
 - [StudentCheckerInterfaceDemo.java](./lesson28/StudentCheckerInterfaceDemo.java)
@@ -2981,5 +2973,5 @@ def((x,y) -> x.length() + y.length());
 - [LambdaParametersDemo.java](./lesson28/LambdaParametersDemo.java)
 
 <div align="right">
-  <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
+  <b><a href="#contents">↥ Back to Contents</a></b>
 </div>
