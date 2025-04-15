@@ -152,6 +152,54 @@ int million = 1_000_000;
 3. **Логические операции:** `&&`, `||`, `!`
 4. **Операции присваивания:** `=`, `+=`, `-=`, `*=`, `/=`
 
+### Примеры
+
+#### Арифметические операции
+
+```java
+int a = 10, b = 3;
+System.out.println("Сложение: " + (a + b)); // 13
+System.out.println("Вычитание: " + (a - b)); // 7
+System.out.println("Умножение: " + (a * b)); // 30
+System.out.println("Деление: " + (a / b)); // 3
+System.out.println("Остаток от деления: " + (a % b)); // 1
+```
+
+#### Операции сравнения
+
+```java
+int x = 5, y = 10;
+System.out.println("Равно: " + (x == y)); // false
+System.out.println("Не равно: " + (x != y)); // true
+System.out.println("Больше: " + (x > y)); // false
+System.out.println("Меньше: " + (x < y)); // true
+System.out.println("Больше или равно: " + (x >= y)); // false
+System.out.println("Меньше или равно: " + (x <= y)); // true
+```
+
+#### Логические операции
+
+```java
+boolean p = true, q = false;
+System.out.println("И (AND): " + (p && q)); // false
+System.out.println("ИЛИ (OR): " + (p || q)); // true
+System.out.println("НЕ (NOT): " + (!p)); // false
+```
+
+#### Операции присваивания
+
+```java
+int num = 5;
+num += 3; // num = num + 3
+System.out.println("После += : " + num); // 8
+num *= 2; // num = num * 2
+System.out.println("После *= : " + num); // 16
+num -= 4; // num = num - 4
+System.out.println("После -= : " + num); // 12
+num /= 3; // num = num / 3
+System.out.println("После /= : " + num); // 4
+```
+
 Код урока доступен в файле: [ArithmeticAndLogicaAndAssignmentAndRelationalOperations.java](./lesson3/ArithmeticAndLogicaAndAssignmentAndRelationalOperations.java).
 
 <div align="right">

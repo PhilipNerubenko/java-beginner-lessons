@@ -94,10 +94,10 @@ The lesson code is available in the file:
 This lesson covers:
 
 - Primitive data types:
-    - Integer types: `byte`, `short`, `int`, `long`
-    - Floating-point types: `float`, `double`
-    - Character type: `char`
-    - Boolean type: `boolean`
+  - Integer types: `byte`, `short`, `int`, `long`
+  - Floating-point types: `float`, `double`
+  - Character type: `char`
+  - Boolean type: `boolean`
 - Representing numbers in binary, octal, and hexadecimal formats
 - Using underscores in numeric literals (introduced in Java 7)
 
@@ -151,6 +151,54 @@ This lesson covers the main types of operations in Java:
 2. **Comparison Operations:** `==`, `!=`, `>`, `<`, `>=`, `<=`
 3. **Logical Operations:** `&&`, `||`, `!`
 4. **Assignment Operations:** `=`, `+=`, `-=`, `*=`, `/=`
+
+### Examples
+
+#### Arithmetic Operations
+
+```java
+int a = 10, b = 3;
+System.out.println("Addition: " + (a + b)); // 13
+System.out.println("Subtraction: " + (a - b)); // 7
+System.out.println("Multiplication: " + (a * b)); // 30
+System.out.println("Division: " + (a / b)); // 3
+System.out.println("Modulus: " + (a % b)); // 1
+```
+
+#### Comparison Operations
+
+```java
+int x = 5, y = 10;
+System.out.println("Equal: " + (x == y)); // false
+System.out.println("Not Equal: " + (x != y)); // true
+System.out.println("Greater Than: " + (x > y)); // false
+System.out.println("Less Than: " + (x < y)); // true
+System.out.println("Greater or Equal: " + (x >= y)); // false
+System.out.println("Less or Equal: " + (x <= y)); // true
+```
+
+#### Logical Operations
+
+```java
+boolean p = true, q = false;
+System.out.println("AND: " + (p && q)); // false
+System.out.println("OR: " + (p || q)); // true
+System.out.println("NOT: " + (!p)); // false
+```
+
+#### Assignment Operations
+
+```java
+int num = 5;
+num += 3; // num = num + 3
+System.out.println("After += : " + num); // 8
+num *= 2; // num = num * 2
+System.out.println("After *= : " + num); // 16
+num -= 4; // num = num - 4
+System.out.println("After -= : " + num); // 12
+num /= 3; // num = num / 3
+System.out.println("After /= : " + num); // 4
+```
 
 The lesson code is available in the file: [ArithmeticAndLogicalAndAssignmentAndRelationalOperations.java](./lesson3/ArithmeticAndLogicalAndAssignmentAndRelationalOperations.java).
 
