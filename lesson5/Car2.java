@@ -5,13 +5,13 @@ public class Car2 {
   String engine;
   int speed;
 
-  int go(int a) {
-    speed += a;
+  int accelerate(int acceleration) {
+    speed += acceleration;
     return speed;
   }
 
-  int stop(int a) {
-    speed -= a;
+  int brake(int deceleration) {
+    speed -= deceleration;
     return speed;
   }
 
@@ -28,9 +28,9 @@ class Car2Test {
     car1.speed = 60;
 
     car1.showInfo();
-    car1.go(20);
+    car1.accelerate(20);
     car1.showInfo();
-    car1.stop(80);
+    car1.brake(80);
     car1.showInfo();
   }
 }

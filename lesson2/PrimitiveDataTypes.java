@@ -1,6 +1,14 @@
 package lesson2;
 
+/**
+* A class that demonstrates the use of primitive data types in Java.
+*/
 public class PrimitiveDataTypes {
+  /**
+   * The main method that is called when the program is run.
+   *
+   * @param args The command line arguments.
+   */
   public static void main(String[] args) {
     // bytes are 8 bits and have a range of -128 to 127
     // bytes are used to save memory in large arrays of integers, replace each integer with a byte
