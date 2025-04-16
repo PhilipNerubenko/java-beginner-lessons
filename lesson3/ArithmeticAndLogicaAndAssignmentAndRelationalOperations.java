@@ -1,6 +1,14 @@
 package lesson3;
 
+/**
+* A class that demonstrates arithmetic, logical, assignment, and relational operations in Java.
+*/
 public class ArithmeticAndLogicaAndAssignmentAndRelationalOperations {
+  /**
+   * The main method that is called when the program is run.
+   *
+   * @param args The command line arguments.
+   */
   public static void main(String[] args) {
     int a = 5;
     int b = a * 2;
