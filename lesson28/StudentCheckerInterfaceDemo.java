@@ -3,8 +3,8 @@ package lesson28;
 import java.util.ArrayList;
 
 /**
-* A class that demonstrates the student checker interface in Java.
-*/
+ * A class that demonstrates the student checker interface in Java.
+ */
 public class StudentCheckerInterfaceDemo {}
 
 // class Student {
@@ -21,7 +21,7 @@ public class StudentCheckerInterfaceDemo {}
 //         this.course = course;
 //         this.avgGrade = avgGrade;
 //     }
-  
+
 // }
 
 // class StudentInfo {

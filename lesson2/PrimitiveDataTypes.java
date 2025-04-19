@@ -1,8 +1,8 @@
 package lesson2;
 
 /**
-* A class that demonstrates the use of primitive data types in Java.
-*/
+ * A class that demonstrates the use of primitive data types in Java.
+ */
 public class PrimitiveDataTypes {
   /**
    * The main method that is called when the program is run.
