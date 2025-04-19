@@ -1,8 +1,8 @@
 package lesson1;
 
 /**
-* A class that demonstrates printing text to the console in Java.
-*/
+ * A class that demonstrates printing text to the console in Java.
+ */
 public class HelloWorld {
   public static void main(String[] args) {
     System.out.println("Welcome to the first lesson!");

@@ -3,8 +3,8 @@ package lesson28;
 import java.util.ArrayList;
 
 /**
-* A class that demonstrates the student filter in Java.
-*/
+ * A class that demonstrates the student filter in Java.
+ */
 public class StudentFilterDemo {}
 
 // class Student {
@@ -21,7 +21,7 @@ public class StudentFilterDemo {}
 //         this.course = course;
 //         this.avgGrade = avgGrade;
 //     }
-  
+
 // }
 
 // class StudentInfo {

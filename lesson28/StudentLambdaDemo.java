@@ -3,8 +3,8 @@ package lesson28;
 import java.util.ArrayList;
 
 /**
-* A class that demonstrates the student lambda in Java.
-*/
+ * A class that demonstrates the student lambda in Java.
+ */
 public class StudentLambdaDemo {}
 
 // class Student {
@@ -21,7 +21,7 @@ public class StudentLambdaDemo {}
 //         this.course = course;
 //         this.avgGrade = avgGrade;
 //     }
-  
+
 // }
 
 // class StudentInfo {
@@ -62,14 +62,15 @@ public class StudentLambdaDemo {}
 //         System.out.println();
 //         info.checkStudent(students, (Student st) -> st.age > 25);
 //         System.out.println();
-//         info.checkStudent(students, st -> { 
-//             int z = 27; 
+//         info.checkStudent(students, st -> {
+//             int z = 27;
 //             return st.age < z;
 //         });
 //         System.out.println();
 //         info.checkStudent(students, (Student st) -> {return st.sex == 'm';});
 //         System.out.println();
-//         info.checkStudent(students, (Student st) -> {return st.avgGrade > 7.2 && st.age < 23 && st.sex == 'f';});
+//         info.checkStudent(students, (Student st) -> {return st.avgGrade > 7.2 && st.age < 23 &&
+//         st.sex == 'f';});
 //     }
 // }
 
