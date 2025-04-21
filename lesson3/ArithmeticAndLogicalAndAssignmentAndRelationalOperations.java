@@ -3,7 +3,7 @@ package lesson3;
 /**
  * A class that demonstrates arithmetic, logical, assignment, and relational operations in Java.
  */
-public class ArithmeticAndLogicaAndAssignmentAndRelationalOperations {
+public class ArithmeticAndLogicalAndAssignmentAndRelationalOperations {
   /**
    * The main method that is called when the program is run.
    *

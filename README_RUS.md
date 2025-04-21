@@ -200,7 +200,7 @@ num /= 3; // num = num / 3
 System.out.println("После /= : " + num); // 4
 ```
 
-Код урока доступен в файле: [ArithmeticAndLogicaAndAssignmentAndRelationalOperations.java](./lesson3/ArithmeticAndLogicaAndAssignmentAndRelationalOperations.java).
+Код урока доступен в файле: [ArithmeticAndLogicaAndAssignmentAndRelationalOperations.java](./lesson3/ArithmeticAndLogicalAndAssignmentAndRelationalOperations.java).
 
 <div align="right">
   <b><a href="#содержание">↥ Вернуться к оглавлению</a></b>
@@ -2118,7 +2118,7 @@ List<String> list = Arrays.asList(array);
 Инкапсуляция - это механизм, который объединяет данные и методы, манипулирующие этими данными, и защищает их от внешнего вмешательства.
 
 ```java
-public class IncapsulationHuman {
+public class EncapsulationHuman {
     private String name;
     private int age;
     
@@ -2193,7 +2193,7 @@ class Student extends Human {
 Код урока доступен в файлах:
 
 - [Inheritance.java](./lesson21/Inheritance.java)
-- [IncapsulationHuman.java](./lesson21/IncapsulationHuman.java)
+- [EncapsulationHuman.java](./lesson21/EncapsulationHuman.java)
 - [Human.java](./lesson21/Human.java)
 - [Test1.java](./lesson21/p1/Test1.java)
 
