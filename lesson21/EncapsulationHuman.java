@@ -3,7 +3,7 @@ package lesson21;
 /**
  * A class that represents a human with encapsulation.
  */
-public class IncapsulationHuman {
+public class EncapsulationHuman {
   /**
    * The gender of the human.
    */
@@ -30,11 +30,11 @@ public class IncapsulationHuman {
   private boolean isSmart;
 
   /**
-   * A constructor for the IncapsulationHuman class that takes in the gender.
+   * A constructor for the EncapsulationHuman class that takes in the gender.
    *
    * @param gender The gender of the human.
    */
-  public IncapsulationHuman(String gender) {
+  public EncapsulationHuman(String gender) {
     this.gender = gender;
   }
 
@@ -107,16 +107,16 @@ public class IncapsulationHuman {
 }
 
 /**
- * A class that tests the IncapsulationHuman class.
+ * A class that tests the EncapsulationHuman class.
  */
-class IncapsulationHumanTest {
+class EncapsulationHumanTest {
   /**
    * The main method that is called when the program is run.
    *
    * @param args The command line arguments.
    */
   public static void main(String[] args) {
-    IncapsulationHuman ih = new IncapsulationHuman("Male");
+    EncapsulationHuman ih = new EncapsulationHuman("Male");
     ih.setName("Jack");
     ih.setAge(10);
     ih.setWeight(50);
