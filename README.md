@@ -825,7 +825,7 @@ public void showColor() {
 
 Lesson code is available in the files:
 
-- [Car.java](./lesson9/Car.java)
+- [Car.java](./lesson9/TypesOfVariablesAndLimitsOfTheirVisibilityCar.java)
 - [Student.java](./lesson9/Student.java)
 
 <div align="right">
