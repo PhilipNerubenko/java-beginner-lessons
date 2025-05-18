@@ -2719,11 +2719,39 @@ class CrampedMuscleException extends RuntimeException {
 
 ### Exception Hierarchy
 
-| Type       | Example                  | Handling Requirement |
-|------------|--------------------------|----------------------|
-| Checked    | `FileNotFoundException`  | Mandatory            |
-| Unchecked  | `NullPointerException`   | Optional             |
-| Error      | `StackOverflowError`     | Not recommended      |
+```
+Throwable
+├── Error (unchecked)
+│   ├── OutOfMemoryError
+│   ├── StackOverflowError
+│   └── LinkageError
+└── Exception
+    ├── RuntimeException (unchecked)
+    │   ├── NullPointerException
+    │   ├── ArithmeticException
+    │   ├── IllegalArgumentException
+    │   ├── IndexOutOfBoundsException
+    │   └── ClassCastException
+    └── Checked Exceptions
+        ├── IOException
+        │   ├── FileNotFoundException
+        │   └── EOFException
+        ├── SQLException
+        └── ClassNotFoundException
+```
+
+| Type       | Example                  | Handling Requirement | Characteristics |
+|------------|--------------------------|---------------------|-----------------|
+| Checked    | `FileNotFoundException`  | Mandatory           | Must be caught or declared |
+| Unchecked  | `NullPointerException`  | Optional            | Runtime errors, typically programming mistakes |
+| Error      | `StackOverflowError`    | Not recommended     | Serious problems, usually irrecoverable |
+
+Key Points:
+
+- All exceptions inherit from `Throwable`
+- `RuntimeException` and its subclasses are unchecked
+- Non-RuntimeException subclasses of `Exception` are checked
+- `Error` and its subclasses represent serious system problems
 
 ### Order of Catch Blocks
 

@@ -2727,11 +2727,39 @@ class CrampedMuscleException extends RuntimeException {
 
 ### Иерархия исключений
 
-| Тип | Пример | Обработка |
-|-----|---------|-----------|
-| Checked | `FileNotFoundException` | Обязательная |
-| Unchecked | `NullPointerException` | Опциональная |
-| Error | `StackOverflowError` | Не рекомендуется |
+```
+Throwable
+├── Error (непроверяемые)
+│   ├── OutOfMemoryError
+│   ├── StackOverflowError
+│   └── LinkageError
+└── Exception
+    ├── RuntimeException (непроверяемые)
+    │   ├── NullPointerException
+    │   ├── ArithmeticException
+    │   ├── IllegalArgumentException
+    │   ├── IndexOutOfBoundsException
+    │   └── ClassCastException
+    └── Проверяемые исключения
+        ├── IOException
+        │   ├── FileNotFoundException
+        │   └── EOFException
+        ├── SQLException
+        └── ClassNotFoundException
+```
+
+| Тип | Пример | Требования к обработке | Характеристики |
+|-----|---------|----------------------|----------------|
+| Проверяемые | `FileNotFoundException` | Обязательно | Должны быть пойманы или объявлены |
+| Непроверяемые | `NullPointerException` | Необязательно | Ошибки времени выполнения, обычно ошибки программирования |
+| Error | `StackOverflowError` | Не рекомендуется | Серьёзные проблемы, обычно неисправимые |
+
+Ключевые моменты:
+
+- Все исключения наследуются от `Throwable`
+- `RuntimeException` и его подклассы являются непроверяемыми
+- Подклассы `Exception`, не являющиеся `RuntimeException`, являются проверяемыми
+- `Error` и его подклассы представляют серьёзные системные проблемы
 
 ### Порядок catch блоков
 
